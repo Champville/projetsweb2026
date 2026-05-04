@@ -1,0 +1,325 @@
+<!-- PAGE 2 L'Essentiel du Cours -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Essentiel du Cours</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="code.js"></script>
+
+    <div class="navBar">
+        <div class="navContents">
+            <a href="index.html"><p>Histoire</p></a>
+            <a href="cours.html" onclick="window.alert('Nous sommes déjà ici !');" class="selected"><p>Cours</p></a>
+            <a href="quiz.html"><p>Quiz</p></a>
+            <a href="equipe.html"><p>Notre Équipe</p></a>
+        </div>
+        <button class="blueButton" id="theme" onclick="switchTheme();"><p>Dark Mode</p></button>
+    </div>
+
+    <div class="Title">
+        <h1>C'est quoi, <b>Python</b> ?</h1>
+    </div>
+    <hr class="hrPacman">
+
+    <div class="Grid">
+        <div class="container">
+            <h2>Langage de Programmation</h2>
+            <p>Python est un langage de <b>programmation</b> qui permet de <b>communiquer</b> avec un <b>ordinateur</b>. Imagine que tu donnes des instructions à ton ordinateur dans une langue qu'il peut comprendre.</p> 
+        </div>
+        <div class="container">
+            <h2>Permet la Communication avec l'ordinateur</h2>
+            <ol>
+                <li>Le <b>programmeur</b> conçoit et écrit un <b>code</b> pour son <b>programme</b> souhaité.</li>
+                <li>Un <b>fichier texte</b> écrit dans une <b>langue proche de l'Anglais.</b></li>
+                <li>Instructions <b>binaires</b> éxécutés par l'ordinateur.</li>
+            </ol>
+        </div>
+        <div class="container">
+            <h2>Pourquoi apprendre Python ?</h2>
+            <p>Python est idéal pour les <b>débuttants</b> car il est <b>simple</b> à lire et à écrire. De plus, c'est l'un des langages les <b>plus utilisés</b> dans le monde <b>professionnel</b>, notamment pour <b>l'intelligence artificielle</b>, l'<b>analyse de données</b>, et les <b>sites web</b>.</p>
+        </div>
+    </div>
+
+    <hr class="hrLong">
+
+    <div class="Title">
+        <h1>Variables dans <b>Python</b></h1>
+    </div>
+
+    <div class="Grid">
+        <div class="container">
+            <h2>C'est quoi une <b>variable</b>?</h2>
+            <p> Une <b>variable</b>, c'est comme une <b>boîte</b> avec une <b>étiquette</b>. Tu peux <b>écrire</b> une valeur dedans et <b>l'utiliser</b> ou même <b>changer</b> son contenu de nouveau.</p>
+        </div>
+        <div class="container">
+            <h2>Créer et utiliser une variable</h2>
+            <p>Pour créer une variable, tu lui donnes un <b>nom</b> et tu y stockes une <b>valeur</b>:</p>
+            <p class="langage-python">age = 15<br>nom = "Marie"<br>taille = 1.65</p>
+        </div>
+        <div class="container">
+            <h2>Modifier une variable</h2>
+            <p >Tu peut <b>changer la valeur</b> d'une variable à tout moment:</p>
+            <p class="langage-python">  score = 0  <br> score = score + 10 <br> score += 5 </p>
+            <p>À la fin, score vaut <b>15</b>.</p> 
+        </div>
+    </div>
+
+    <hr class="hrLong">
+
+    <div class="Title">
+        <h1>Les opérateurs</h1>
+    </div>
+    
+    <div class="Grid2">
+        <div class="container">
+            <h2>Opérateurs arithmétiques</h2>
+            
+            <table class="operateurTable" border="1">
+                <thead>
+                    <th>Opérateur</th>
+                    <th>Fonction</th>
+                </thead>
+                <tr>
+                    <td><b class="langage-python">+</b></td>
+                    <td>Additionner</td>
+                </tr>
+                <tr>
+                    <td><b class="langage-python">-</b></td>
+                    <td>Soustraire</td>
+                </tr>
+                <tr>
+                    <td><b class="langage-python">*</b></td>
+                    <td>Multiplier</td>
+                </tr>
+                <tr>
+                    <td><b class="langage-python">/</b></td>
+                    <td>Diviser</td>
+                </tr>
+                <tr>
+                    <td><b class="langage-python">**</b></td>
+                    <td>Élever à une puissance</td>
+                </tr>
+                <tr>
+                    <td><b class="langage-python">//</b></td>
+                    <td>Quotient</td>
+                </tr>
+                <tr>
+                    <td><b class="langage-python">%</b></td>
+                    <td>Donne le reste</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="container">
+            <h2>Opérateurs Binaires</h2>
+            
+            <table class="operateurTable" border="1">
+                <thead>
+                    <th>Opérateur</th>
+                    <th>Fonction</th>
+                </thead>
+                <tr>
+                    <td><b class="langage-python">&</b></td>
+                    <td>And</td>
+                </tr>
+                <tr>
+                    <td><b class="langage-python">-</b></td>
+                    <td>Soustraire</td>
+                </tr>
+                <tr>
+                    <td><b class="langage-python">*</b></td>
+                    <td>Multiplier</td>
+                </tr>
+                <tr>
+                    <td><b class="langage-python">/</b></td>
+                    <td>Diviser</td>
+                </tr>
+                <tr>
+                    <td><b class="langage-python">**</b></td>
+                    <td>Élever à une puissance</td>
+                </tr>
+            </table>
+            
+            <p class="center">Ces opérateurs travaillent directement avec les bits (<b class="langage-python">0</b> et <b class="langage-python">1</b>)</p>
+        </div>
+    </div>
+
+    <hr class="hrLong">
+
+    <div class="Title">
+        <h1>Affichage</h1>
+    </div>
+
+    <div class="Grid">
+        <div class="container">
+            <h2>La fonction <b class="langage-python">print()</b></h2>
+            <p>Pour afficher quelque chose à l'écran, utilise <b class="langage-python">print()</b> :</p>
+            <p class="langage-python">message = "bonjour"<br> print(message)</p>
+            <p><u>Résultat</u>: <b>bonjour</b></p>
+            <p> Tu peux afficher plusieurs choses en les séparant par des virgules : </p>
+            <p class="langage-python">prenom = "alex" <br> age = 16  <br> print("Je m'appelle", prenom, "et j'ai", age, "ans")</p>
+            <p><u>Résultat</u>: <b>Je m'appelle alex et j'ai 16 ans</b></p>
+        </div>
+        <div class="container">
+            <h2>Les <b>f-string</b></h2>
+            <p>Une façon moderne et pratique d'insérer des variables dans du texte. </p>
+            <p>Ajoute un <b class="langage-python">f</b> avant les guillemets :</p>
+            <p class="langage-python">ville = "Paris"<br>temperature = 22<br>print(f"Il fait {temperature}°C à {ville} aujourd'hui")</p>
+            <p><u>Résultat</u>: <b>Il fait 22°C à Paris aujourd'hui</b></p>
+            <p>Un autre exemple avec arrondissement :</p>
+            <p class="langage-python">prix = 42.46587<br>print(f"Le total est {prix:.1f}€")</p>
+            <p><u>Résultat</u>: <b>Le total est 42.5€</b></p>
+        </div>
+        <div class="container">
+            <h2>Caractères spéciaux</h2>
+            <p >Dans une chaine de caractères :</p>
+            <ul>
+                <li>Le caractère <b class="langage-python">\n</b> crée une nouvelle ligne dans ton texte.</li>
+                <li>Le caractère <b class="langage-python">\t</b> représente un espace <b><u>TAB</u></b>.</li>
+                <li>Le caractère <b class="langage-python">\\</b> est utilisé pour afficher un backslash <b class="langage-python">\</b>.</li>
+            </ul>
+
+        </div>
+    </div>
+
+    <hr class="hrLong">
+    <div class="Title">
+        <h1>Fonction</h1>
+    </div>
+        
+    <div class="container center marginInline">
+        <p> Une fonction est comme une <b>machine</b></p>
+        <p>Tu lui donnes des <b>ingrédients</b> (arguments), elle fait un <b>traitement</b>, et elle te rend <b>un résultat</b>.</p>
+    </div>
+
+    <div class="Grid">
+        
+        <div class="container">
+            <h2>Créer une <b>fonction</b></h2>
+            <p> Pour définir une fonction, on utilise le mot-clé <b class="langage-python">def</b>:</p>
+            <p class="langage-python">def calculer_carre(nombre):<br>&nbsp;&nbsp;&nbsp;&nbsp;resultat = nombre * nombre<br>&nbsp;&nbsp;&nbsp;&nbsp;return resultat </p>
+        </div>
+        <div class="container">
+            <h2>Appeler une <b>fonction</b></h2>
+            <p>Une fois définie, tu peux appeler ta fonction autant de fois que tu veux :</p>
+            <p class="langage-python">mon_nombre = 5 <br>carre = calculer_carre(mon_nombre) <br>print(carre)<br></p>
+            <p><u>Résultat</u>: <b>25</b></p>
+        </div>
+        <div class="container">
+            <h2>Fonctions avec plusieurs paramètres</h2>
+            <p >Une fonction peut accepter aucun ou plusieurs arguments :</p>
+            <p class="langage-python">def calculer_aire_rectangle(longueur, largeur):<br>&nbsp;&nbsp;&nbsp;&nbsp;return longueur * largeur<br><br>print(calculer_aire_rectangle(10,2))<br></p>
+            <p><u>Résultat</u>: <b>20</b></p>
+        </div>
+    </div>
+
+    <hr class="hrLong">
+
+    <div class="Title">
+        <h1>Valeurs par défaut</h1>
+    </div>
+    
+    <div class="Grid2">
+        
+        <div class="container">
+            <h2>Paramètres par défault dans une fonction</h2>
+            <p>Tu peux donner des valeurs par défaut à certains paramètres. Si tu n'indiques pas de valeur lors de l'appel, Python utilisera la valeur par défaut :</p>
+            <p class="langage-python"> def saluer(nom, formule="Bonjour"): <br>&nbsp;&nbsp;&nbsp;&nbsp;return f"{formule} {nom}"<br><br>print(saluer("Julie")) # Utilise "Bonjour"<br>print(saluer("Paul", "Salut")) # Utilise "Salut"</p>
+            <p><u>Résultat</u>: <b>Bonjour Julie</b></p>
+            <p><u>Résultat</u>: <b>Salut Paul</b></p>
+        </div>
+        <div class="container">
+            <h2>Exemple pratique : calcul de prix</b></h2>
+            <p>Imaginons une fonction qui calcule le prix TTC (avec TVA). Au Liban, la TVA est de 11% par défaut :</p>
+            <p class="langage-python">def prix_ttc(prix_ht, tva=11):<br>&nbsp;&nbsp;&nbsp;&nbsp;return prix_ht * (1 + tva/100)<br><br># Utilise la TVA par défaut (11%)<br>print(prix_ttc(100))<br># Affiche: 111.0<br><br># Spécifie une TVA différente (20%)<br>print(prix_ttc(200, 20)) <br># Affiche: 240.0<br><br># On peut aussi nommer les paramètres<br>print(prix_ttc(tva=12, prix_ht=300)) # Affiche: 336.0<br>print(prix_ttc(prix_ht=100)) # Affiche: 111.0</p>
+        </div>
+        
+    </div>
+        <div class="container center marginInline">
+        <h2><b style="color: rgb(228, 39, 39);">ATTENTION</b></h2>
+        <p> Les paramètres avec valeurs par défaut doivent toujours venir après les paramètres obligatoires dans la définition de la fonction. </p>
+        
+        <p><b class="langage-python">return</b> vs <b class="langage-python">print</b> : return renvoie une valeur, print l'affiche. Ce n'est pas pareil !</p>
+        <p><b>Encapsulation :</b> Une fonction doit être indépendante. <b>N'utilise JAMAIS des variables définies en dehors de la fonction ! </b></p>
+        <p><b class="langage-python">input()</b> : N'utilise pas <b class="langage-python">input()</b> dans une fonction. Passe plutôt la valeur en argument. Pourquoi ? Parce que ce n'est pas professionnel !</p>
+
+        </div>
+
+    <hr class="hrLong">
+
+    <div class="Title">
+        <h1>Expressions booléennes</h1>
+    </div>
+    
+    <div class="container center marginInline">
+        <p> Une expression booléenne est une question qui a une réponse : <b class="langage-python">True</b> (vrai) ou <b class="langage-python">False</b> (faux).
+        <p> Une expression booléenne peut être obtenu en Python à partir des opérateurs de comparaison et les opérateurs logiques. </b>
+        </div>
+
+        <div class="Grid2">
+        
+        <div class="container">
+            <h2>Opérateurs de comparaison</h2>
+            <table class="operateurTable" border="1">
+                <thead>
+                    <th>Opérateur</th>
+                    <th>Fonction</th>
+                </thead>
+                <tr>
+                    <td><b class="langage-python">==</b></td>
+                    <td>Strictement Égal</td>
+                </tr>
+                <tr>
+                    <td><b class="langage-python">!=</b></td>
+                    <td>Différent</td>
+                </tr>
+                <tr>
+                    <td><b class="langage-python">></b></td>
+                    <td>Strictement Supérieur</td>
+                </tr>
+                <tr>
+                    <td><b class="langage-python"><</b></td>
+                    <td>Strictement Inférieur</td>
+                </tr>
+                <tr>
+                    <td><b class="langage-python">>=</b></td>
+                    <td>Supérieur ou Égal</td>
+                </tr>
+                <tr>
+                    <td><b class="langage-python"><=</b></td>
+                    <td>Inférieur ou Égal</td>
+                </tr>
+            </table>
+            
+        </div>
+
+        <div class="container">
+            <h2>Opérateurs logiques</b></h2>
+            
+            <table class="operateurTable" border="1">
+                <thead>
+                    <th>Opérateur</th>
+                    <th>Fonction</th>
+                </thead>
+                <tr>
+                    <td><b class="langage-python">and</b></td>
+                    <td>Vrai si les deux conditions sont vraies</td>
+                </tr>
+                <tr>
+                    <td><b class="langage-python">or</b></td>
+                    <td>Vrai si au moins une condition est vraie</td>
+                </tr>
+                <tr>
+                    <td><b class="langage-python">not</b></td>
+                    <td>Inverse la valeur (vrai devient faux et vice versa)</td>
+                </tr>
+            </table>
+            
+        </div>
+</body>
+</html>

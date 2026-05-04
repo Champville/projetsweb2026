@@ -1,0 +1,103 @@
+<!-- PAGE 1 Histoire de l'Informatique -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histoire de l'Informatique</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="code.js"></script>
+    
+    <div class="navBar">
+        <div class="navContents">
+            <a href="index.html" onclick="window.alert('Nous sommes déjà ici !');" class="selected"><p>Histoire</p></a>
+            <a href="cours.html"><p>Cours</p></a>
+            <a href="quiz.html"><p>Quiz</p></a>
+            <a href="equipe.html"><p>Notre Équipe</p></a>
+        </div>
+        <button class="blueButton" id="theme" onclick="switchTheme();"><p>Dark Mode</p></button>
+    </div>
+
+    <div class="center">
+        <h1>L'Histoire de <b>Python</b> ?</h1>
+    </div>
+    <hr class="hrPacman">
+
+    <div class="container flex">
+        <div class="contentDiv">
+            <h3 class="center">Un peu d'histoire...</h3>
+            <p>Tout débutte avec un certain mathématicien nommé <b>Guido van Rossum</b>.</p>
+            
+            <p>Ce dernier:</p>
+            <ol>
+                <li>Était un passionné de langages de programmation.</li> 
+                <li>Travaillait au laboratoire <b>Centrum Wiskunde & Informatica</b> (CWI) aux Pays-Bas.</li>
+                <li>Aimait les <b>Monty Python</b>, une troupe de comédie durant les années <b>1970</b>.</li>
+            </ol>
+            <p>Pour cela, il a décidé de créer un langage de programmation à la fois <u>facile à utiliser</u> et <u>lisible</u>.</p>
+            <p>Ainsi durant les vacances de Noël en <b>1989</b>, il nomme son langage de programmation <b>ABC</b>.</p>
+            <p>Cependant, en raison de son amour pour <b>Monty Python</b>, il crée un nouveau langage comme successeur à ABC qu'il renomme vite <b class="langage-python">Python</b>.</p>
+        </div>
+
+        <div class="imgDiv">
+            <img src="images/Guido.jpg" alt="Photo de Guido Van Rossum" class="portraitPhoto">
+            <p><i>Guido van Rossum</i></p>
+        </div>
+
+    </div>
+
+    <br>
+    <div class="container">
+        <h3 class="center">Comment a-t-il commencé ?</h3>
+        <p>Vers la fin des années <b>1870</b>, <b>Guido van Rossum</b> a créé Python dans le laboratoire <b>Centrum Wiskunde & Informatica</b> (CWI) <b>aux Pays-Bas</b>.<p>
+        <p>Il a commencé à travailler sur Python en <b>1989</b>, et la première version publique de Python, la version <b class="langage-python">0.9.0</b>, a été publiée en <b>1991</b>. (De nos jours, la version la plus récente est <b class="langage-python">3.14.4</b>).</p>
+        <p>Python contient déjà des concepts modernes comme: <b>classes</b>, <b>exceptions</b>, <b>fonctions</b>, <b>types de données avancés</b> (listes, dictionnaires).</p>
+        <p>Le langage devient populaire avec la sortie de Python <b class="langage-python">2.x</b> en <b>2000</b>.</p>
+        <p>En <b>2008</b>, Python <b class="langage-python">3.x</b> sort pour corriger des problèmes structurels de Python <b class="langage-python">2.x</b></p>
+
+        <br>
+        <p class="center"><b>Évolution de Python en bref:</b></p>
+        <table class="operateurTable" border="1">
+            <thead>
+                <th>Version de Python</th>
+                <th>Changements et nouveautés</th>
+            </thead>
+            <tr>
+                <td><b class="langage-python">1.0</b></td>
+                <td>Outils de programmation <b>fonctionnels</b> (lambda, map, filter)</td>
+            </tr>
+            <tr>
+                <td><b class="langage-python">2.0</b></td>
+                <td>Introduction des <b>classes</b>, des <b>exceptions</b> et des <b>listes en compréhension</b></td>
+            </tr>
+            <tr>
+                <td><b class="langage-python">3.0</b></td>
+                <td>Incompatibilité avec les versions précédentes mais amélioration de la <b>syntaxe</b> et des <b>fonctionnalités</b></td>
+            </tr>
+            <tr>
+                <td><b class="langage-python">3.x</b></td>
+                <td>Les versions les plus récentes de <b>Python</b> sont encore dans Python <b class="langage-python">3.x</b></td>
+            </tr>
+        </table>
+    </div>
+
+    <br>
+    <div class="container">
+        <h3 class="center">Et Aujourd'hui ?</h3>
+        <div class="flex">
+            <div class="contentDiv">
+            <p>Python est aujourd'hui souvent le premier langage appris par les débutants (nous sommes un exemple de cela).</p>
+            <p>Mais il est aussi utilisé par des professionnels et des organisations très majeures comme <b>Google</b>, <b>OpenAI</b> ou la <b>NASA</b>.</p>
+        </div>
+        <div class="imgDiv">
+            <img src="images/pythonLogo.png" alt="Logo de Python" width="100%" class="pythonLogo">
+            <p><i>Le logo de Python actuellement.</i></p>
+        </div>
+        </div>
+    </div>
+
+</body>
+</html>

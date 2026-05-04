@@ -1,0 +1,384 @@
+/* Style commun qui ne change pas normalement */
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(238, 248, 255);
+    color: black;
+
+    background-image: radial-gradient(rgba(141, 141, 141, 0.051) 15%, transparent 16%),
+    /* radial gradient qui nous donne les jolis polka dots */
+    radial-gradient(rgba(0, 0, 0, 0.041) 15%, transparent 16%);
+    /* change la taille des dots */
+    background-size: 60px 60px;
+    /* la position devrait tjrs être 0 0 */
+    background-position: 0 0, 30px 30px;
+}
+
+.body-transition {
+    transition: background-color 0.3s, color 0.3s; /* transition pour les changements de thème (dark/light mode) */
+}
+
+.selected {
+    color: rgb(139, 166, 255);
+}
+
+/* LIGHT MODE */
+
+.navBar {
+    background-color: rgb(230, 239, 255);
+    display: flex;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.navContents {
+    display: flex;
+    flex: 1;
+    padding-inline: 10px;
+}
+
+.navContents a {
+    padding-inline: 20px;
+}
+
+.blueButton {
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px;
+    transition: transform 0.1s ease-in;
+    background-color: rgb(171, 196, 240);
+    cursor: pointer;
+}
+
+.blueButton:hover {
+    transform: scale(1.1);
+}
+
+a {
+    font-weight: bold;
+    color: rgb(76, 48, 180);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+a:hover {
+    color: rgb(178, 160, 247);
+    transition: scale(1.1);
+}
+
+h1 {
+    filter: drop-shadow(0px 2px 2px rgb(165, 165, 165));
+}
+
+.hrPacman {
+    margin: 20px;
+    border: 0;
+    height: 25px;
+    background-image: url("images/pacman-hr.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hrLong {
+    width: 80%;
+    margin-top: 25px;
+    border: 1px dashed gray;
+}
+
+.center {
+    text-align: center;
+    justify-content: center;
+}
+
+.Title {
+    padding-inline: 25px;
+    text-align: center;
+}
+
+.Grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: auto;
+    padding: 1em;
+}
+
+.Grid2 {
+    /* 2 colonnes au lieu de 3 */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: auto;
+    padding: 1em;
+}
+
+.container {
+    background-color:rgb(230, 239, 255);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    text-align: justify;
+    padding-inline: 20px;
+    filter: drop-shadow(0px 5px 5px rgb(165, 165, 165));
+}
+
+.container h2 {
+    text-align: center;
+}
+
+.langage-python {
+    font-family: Consolas;
+    border-radius: 5px;
+    padding-inline: 10px;
+    background-color: rgb(203, 220, 243);
+    color: rgb(17, 123, 243);
+}
+
+.python-number {
+    color: rgb(0, 195, 46);
+}
+
+.python-operator {
+    color: rgb(114, 134, 79);
+}
+
+.python-keyword {
+    color: rgb(130, 112, 196);
+}
+
+.operateurTable {
+    border-collapse: collapse;
+    margin-inline: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    background-color: rgb(203, 220, 243);
+    margin: auto;
+    margin-bottom: 50px;
+    /* nous permet d'enlever la bordure de la table pour faire un bon border-radius */
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.operateurTable thead tr {
+    background-color: rgb(74, 152, 241);
+    border: 1px solid black;
+}
+
+.operateurTable th, td {
+    padding: 12px 35px;
+}
+
+.marginInline {
+    margin-inline: 15px;
+}
+
+.equipePhoto {
+    width: 35%;
+    border-radius: 10px;
+}
+
+.portraitPhoto {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.flex {
+    display: flex;
+}
+
+.contentDiv {
+    flex: 8;
+}
+
+.imgDiv {
+    flex: 1;
+}
+
+.pythonLogo {
+    justify-content: center;
+}
+
+/* DARK MODE - Seulement les élements qui ont besoin d'un changement (les couleurs surtout) */
+
+body.dark-mode {
+    background-color: rgb(29, 33, 61);
+    color: white;
+}
+
+body.dark-mode .selected {
+    color: rgb(77, 67, 211);
+}
+
+body.dark-mode .navBar {
+    border: 1px solid rgb(100, 100, 100);
+    background-color: rgb(40, 45, 85);
+}
+
+body.dark-mode .blueButton {
+    background-color:rgb(77, 67, 211);
+    color: white;
+}
+
+body.dark-mode h1 {
+    filter: drop-shadow(0px 3px 2px rgb(8, 8, 8));
+}
+
+body.dark-mode a {
+    color: rgb(130, 112, 196);
+}
+
+body.dark-mode a:hover {
+    color: rgb(214, 203, 255);
+}
+
+body.dark-mode .container {
+    background-color:rgb(40, 45, 85);
+    border: 1px solid rgb(100, 100, 100);
+    filter: drop-shadow(0px 5px 8px rgb(9, 11, 29));
+}
+
+body.dark-mode .langage-python {
+    background-color: rgb(29, 29, 78);
+    color: rgb(136, 191, 255);
+}
+
+body.dark-mode .operateurTable {
+    background-color: rgb(58, 58, 112);
+}
+
+body.dark-mode .operateurTable thead tr {
+    border: 1px solid rgb(212, 216, 230);
+}
+
+/* les effets magiques */
+
+.letter {
+    /* pour chaque lettre */
+    display: inline-block;
+    /* on fait une animation qui fait bouger la lettre de manière infinie pendant 5s à la fois */
+    /* le mvmt actuel est fait par des keyframes */
+    animation: bob 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes bob {
+    /* hi, bob */
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-2px);
+  }
+}
+
+.quizButton {
+    background-color: rgb(17, 123, 243);
+    /* la couleur reste la même ça va */
+    color: white;
+    border-radius: 40px;
+    padding: 20px;
+}
+
+#quizTimer {
+    position: fixed;
+    /* on la place dans un autre plan pour ne pas qu'elle soit affectée par le contenu sur la page */
+    z-index: 2;
+    font-weight: bold;
+    font-size: 40px;
+    /* elle est un peu timide, */
+    right: 10px;
+
+    background-color: rgb(17, 123, 243);
+    /* la couleur ne change pas aussi */
+    border: 2px solid black;
+    border-radius: 15px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+    padding: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 0;
+
+    /* il bouge de 15px à gauche */
+    transform: translateX(15px);
+    transition: transform 0.5s ease;
+}
+
+.timerRecede {
+    transform: translateX(370px) !important;
+}
+
+#quizContainer {
+    margin-top: 10px;
+}
+
+#options {
+    /* s'assurer que les options soient une à côté de l'autre, pas en dessous */
+    display: flex;
+    flex-direction: column;
+}
+
+.quizLost {
+    /* quand on perd le quiz */
+    /* j'espère que ça ne va pas se passer */
+    opacity: 0;
+    /* on fait que le texte rotate de 15 degrès et monte de 100px */
+    transform: rotate(15deg) translateY(100px);
+    animation: quizLoss 1s forwards ease-out;
+}
+
+@keyframes quizLoss {
+    /* j'espère aussi que ça ne va pas se dérouler */
+    0% {
+        opacity: 1;
+        transform: rotate(0deg) translateY(0px);
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(15deg) translateY(400px);
+    }
+}
+
+.declarer {
+    /* annonce du texte */
+    position: fixed;
+    /* au dessus de tout l'univers de la page web, dans une autre dimension */
+    z-index: 9;
+    font-size: 90px;
+    font-weight: bold;
+
+    /* Center */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* on lui donne une animation */
+    animation: declarerAnim 1s ease-out forwards;
+}
+
+@keyframes declarerAnim {
+    /* l'animation elle même */
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0);
+    }
+
+    15% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+
+    30% {
+        transform: translate(-50%, -50%) scale(0.9);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(2);
+    }
+    /* c'est un peu aléatoire mais cv */
+}

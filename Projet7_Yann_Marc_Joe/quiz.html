@@ -1,0 +1,44 @@
+<!-- PAGE 3 Quiz Intéractif -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Intéractif</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="code.js"></script>
+    
+    <div class="navBar">
+        <div class="navContents">
+            <a href="index.html"><p>Histoire</p></a>
+            <a href="cours.html"><p>Cours</p></a>
+            <a href="quiz.html" onclick="window.alert('Nous sommes déjà ici ! Voulez-vous recommencer le quiz ?');" class="selected"><p>Quiz</p></a>
+            <a href="equipe.html"><p>Notre Équipe</p></a>
+        </div>
+        <button class="blueButton" id="theme" onclick="switchTheme();"><p>Dark Mode</p></button>
+    </div>
+
+    <div class="center">
+        <div class="questions">
+            <h1>Prêts pour le <b>Quiz</b> ?</h1>
+        </div>
+    </div>
+    <hr class="hrPacman">
+    
+    <div class="center">
+        <button class="blueButton center quizButton"><h1>Commencer !</h1></button>
+    </div>
+
+    <div id="quizTimer" class="timerRecede">0:00</div>
+    
+    <div class="container" id="quizContainer" style="display: none;">
+        <h3>Vous avez terminé le quiz.</h3>
+        <p>C'est bien ça...</p>
+        <div id="options"></div>
+        <button class="blueButton" id="nextButton">Suivant</button>
+    </div>
+</body>
+</html>
