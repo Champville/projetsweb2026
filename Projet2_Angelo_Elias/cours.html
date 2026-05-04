@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NSI PROJET-Cours</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body class="dark">
+    <div class="actuel">
+    <label class="switch">
+      <input type="checkbox" onclick="toggleMode()" />
+      <span class="slider"></span>
+    </label>
+  </div>
+    <div class="gif-background">
+      <h1>Cours Condensé</h1>
+    </div>
+    <p>Vous etes actuellement dans la page 'Cours'</p>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="equipe.html">Equipe</a>
+    </nav>
+
+    <hr />
+
+    <h2>La base Binaire :</h2>
+    <p class="subtitle">
+      En informatique, les ordinateurs fonctionnent avec un système de
+      numération qui n'utilise que deux symboles : 0 et 1. Ces symboles sont
+      appelés des bits (pour binary digit). Un bit représente un état binaire,
+      comme "allumé" ou "éteint" dans un circuit électrique. C'est la base de
+      tout traitement, calcul et représentation de l'information dans une
+      machine.
+    </p>
+    <div class="box">
+      <h3>Conversion du Binaire en Décimal :</h3>
+      <p>
+        Pour comprendre la valeur d'un nombre binaire, il faut le convertir en
+        système décimal (notre système de base 10). La méthode consiste à
+        multiplier chaque bit par une puissance de 2 croissante, en commençant
+        par le bit le plus à droite, puis à additionner les résultats. Le bit le
+        plus à droite est associé à 2⁰, le suivant à 2¹, et ainsi de suite.
+      </p>
+
+      <div class="binary-example">
+        <div class="bits">
+          <div class="bit">
+            <span class="digit">1</span><span class="power">2³</span>
+          </div>
+          <div class="bit">
+            <span class="digit">0</span><span class="power">2²</span>
+          </div>
+          <div class="bit">
+            <span class="digit">1</span><span class="power">2¹</span>
+          </div>
+          <div class="bit">
+            <span class="digit">1</span><span class="power">2⁰</span>
+          </div>
+        </div>
+        <div class="calculations">
+          <span>1 × 2³ = 8</span>
+          <span class="plus">+</span>
+          <span>0 × 2² = 0</span>
+          <span class="plus">+</span>
+          <span>1 × 2¹ = 2</span>
+          <span class="plus">+</span>
+          <span>1 × 2⁰ = 1</span>
+        </div>
+        <div class="result">Résultat Décimal: 8 + 0 + 2 + 1 = 11</div>
+      </div>
+    </div>
+    <div class="box">
+      <h3>Conversion du Décimal en Binaire :</h3>
+      <p>
+        La conversion inverse se fait par la méthode des divisions successives
+        par 2. On divise le nombre décimal par 2 et on note le reste (qui sera
+        toujours 0 ou 1). On continue de diviser le quotient obtenu par 2, en
+        notant à chaque fois le reste, jusqu'à ce que le quotient soit 0. Le
+        nombre binaire est formé par l'ensemble des restes, lus de bas en haut.
+      </p>
+      <div class="box-img" style="width: 70%">
+        <img
+          src="images/db.png"
+          alt="exemple de conversion du decimal en binaire."
+        />
+      </div>
+    </div>
+    <hr />
+    <h2>La Base Hexadécimal :</h2>
+    <p class="subtitle">
+      Le système hexadécimal (ou "hex") est un système de numération en base 16.
+      Contrairement à notre système décimal (base 10) qui utilise 10 chiffres
+      (0-9), l'hexadécimal en utilise 16 : les chiffres de 0 à 9, et les lettres
+      de A à F pour représenter les valeurs de 10 à 15. Son atout principal est
+      la compacité. Un seul chiffre hexadécimal peut représenter exactement
+      quatre chiffres binaires (bits), ce qui rend les longues séquences de bits
+      beaucoup plus simples à lire et à écrire. C'est pourquoi on le trouve
+      partout en informatique : pour les codes de couleurs (ex : #FF5733), les
+      adresses mémoire, ou pour représenter des données brutes.
+    </p>
+    <div class="box">
+      <h3>De l'hexadécimal au décimal :</h3>
+      <p>
+        Pour convertir un nombre hexadécimal en décimal, il faut multiplier
+        chaque chiffre par une puissance de 16, en partant de la droite. Le
+        chiffre le plus à droite est multiplié par 160, le suivant par 161, etc.
+      </p>
+      <div class="binary-example">
+        <div class="bits">
+          <div class="bit">
+            <span class="digit">2</span><span class="power">16²</span>
+          </div>
+          <div class="bit">
+            <span class="digit">A</span><span class="power">16¹</span>
+          </div>
+          <div class="bit">
+            <span class="digit">F</span><span class="power">16⁰</span>
+          </div>
+        </div>
+        <div class="calculations">
+          <span>2 × 16² = 512</span>
+          <span class="plus">+</span>
+          <span>A × 16¹ = 160</span>
+          <span class="plus">+</span>
+          <span>F × 16⁰ = 15</span>
+        </div>
+        <div class="result">Résultat Décimal: 512 + 160 + 15 = 687</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="box-content">
+        <div class="box-text">
+          <h3>Du décimal à l'hexadécimal :</h3>
+          <p>
+            Pour convertir un nombre décimal en hexadécimal, on utilise la
+            méthode des divisions successives par 16. On note le reste de chaque
+            division jusqu'à ce que le quotient soit 0. On lit ensuite les
+            restes de bas en haut pour obtenir le nombre hexadécimal.
+          </p>
+        </div>
+        <div class="box-img">
+          <img
+            src="images/dh.jpg"
+            alt="image conversion du decimal en hexadecimal"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <h3>De l'hexadécimal au binaire :</h3>
+      <p>
+        Cette conversion est très directe. Chaque chiffre hexadécimal est
+        converti en son équivalent binaire sur <u>quatre bits.</u>
+      </p>
+      <h3>Du binaire à l'hexadécimal :</h3>
+      <p>
+        Pour passer du binaire à l'hexadécimal, il faut d'abord regrouper les
+        bits par <b>paquets de quatre</b>, en partant de la droite. Si le
+        dernier paquet à gauche n'a pas quatre bits, on ajoute des zéros en
+        tête. Ensuite, chaque paquet est converti en son chiffre hexadécimal
+        équivalent.
+      </p>
+      <div class="box-img" style="width: 70%; justify-content: center">
+        <img
+          src="images/tbbh.jpg"
+          alt="tableau de conversion"
+        />
+      </div>
+    </div>
+    <div class="box">
+      <h3>
+        <b>Convertisseur : </b>Convertir un entier en binaire et en hexadécimal
+      </h3>
+
+      <p>
+        Entier à convertir :
+        <input
+          type="text"
+          size="10"
+          id="entier"
+          maxlength="8"
+          placeholder="Entier"
+        />
+      </p>
+      <p>
+        Convertir en : <input type="radio" name="choix" id="binaire" /><label
+          for="binaire"
+          >binaire</label
+        >
+        <input type="radio" name="choix" id="hexa" /><label for="hexa"
+          >hexadécimal</label
+        >
+        <input type="button" class="conv" onclick="Calcul()" value="Convertir"/>
+      </p>
+      <p>
+        Résultat :
+        <input type="text" size="20" id="resultat" disabled="disabled" />
+      </p>
+    </div>
+    <div class="box">
+      <div class="box-content">
+        <div class="box-text">
+      <h3>Nombre de bits nécessaires</h3>
+
+      <b>Entiers positifs</b><br />
+      Sur n bits, on peut représenter 2^n valeurs (de 0 à 2^n - 1).<br />
+      Pour trouver le nombre de bits : prendre la plus petite puissance de 2
+      supérieure au nombre.<br />
+      <i>Exemple :</i> 2^7 = 128 ≤ 200 < 2^8 = 256 → <b>8 bits</b><br /><br />
+
+      <b>Somme et multiplication</b><br />
+      Somme → <b>n + 1 bits</b><br />
+      Multiplication → <b>2n bits</b><br /><br />
+
+      <b>Nombres négatifs</b><br />
+      1. Prendre la valeur absolue<br />
+      2. Calculer les bits<br />
+      3. Ajouter <b>1 bit</b> pour le signe<br />
+      <i>Exemple :</i> -100 → 100 = 7 bits → +1 → <b>8 bits</b>
+    </div>
+    <div class="box-img">
+      <img src="images/tableau.jpg" alt="nb de bit"/>
+    </div>
+  </div>
+</div>
+
+    <div class="box">
+      <div class="box-content">
+        <div class="box-text">
+      <h3>Addition binaire et overflow</h3>
+
+      <b>Règles de base</b><br />
+      0 + 0 = 0<br />
+      0 + 1 = 1<br />
+      1 + 0 = 1<br />
+      1 + 1 = 0 (retenue 1)<br /><br />
+    </div>
+    <div class="box-img">
+      <img src="images/addition.webp" alt="addition de base "/>
+    </div>
+</div>
+</div>
+    <div class="box">
+      <div class="box-content">
+        <div class="box-text">
+      <b>Overflow<br/>
+      Quand le résultat dépasse le nombre de bits → la retenue finale est
+      perdue.<br />
+      <i>Exemple :</i><br />
+      1000 + 1000 = 10000 → sur 4 bits → <b>0000</b><br /><br />
+      </div>
+      <div class="box-img">
+       
+      </div>
+    </div>
+  </div>
+
+    <div class="box">
+      <div class="box-content">
+        <div class="box-text">
+      
+      
+      <h3>Complément à 2 (nombres négatifs)</h3>
+
+      <b>Principe</b><br />
+      - Bit de gauche = signe (0 = +, 1 = -)<br /><br />
+
+      <b>Méthode</b><br />
+      1. Écrire le nombre en binaire<br />
+      2. Inverser les bits<br />
+      3. Ajouter 1<br /><br />
+
+      <i>Exemple :</i><br />
+      38 → 0010 0110<br />
+      → inversion : 1101 1001<br />
+      → +1 : <b>1101 1010</b> (−38)<br /><br />
+
+      <b>Méthode rapide</b><br />
+      Garder jusqu’au premier 1 (à droite), inverser le reste.<br /><br />
+
+      <b>Attention</b><br />
+      Pour lire un nombre négatif :<br />
+      → refaire le complément à 2<br />
+      → ajouter le signe −<br /><br />
+        </div>
+      <div class="box-img">
+<img src="images/addition2.jpeg" alt="complement a 2"/>
+      </div>
+    </div>
+
+  
+</div>
+    <div class="box">
+      <div class="box-content">
+        <div class="box-text">
+
+    <h3>Nombres flottants</h3>
+
+    <b>Principe</b><br />
+    Les nombres réels ne sont pas toujours représentables exactement en
+    binaire.<br /><br />
+
+    <i>Exemple :</i> 0,1 → écriture infinie en binaire<br /><br />
+
+    <b>Conversion</b><br />
+    Utiliser les puissances négatives de 2.<br /><br />
+  </div>
+  <div class="box-img">
+    <img src="images/ok.png" alt="nb flottant "/>
+  </div>
+</div>
+</div>
+  <div class="box">
+    <div class="box-content">
+      <div class="box-text">
+
+    <h3>Python (bases)</h3>
+
+    <b>Écriture</b><br />
+    Binaire : 0b1011<br />
+    Hexa : 0x1A<br /><br />
+
+    <b>Conversion</b><br />
+    bin(11) → 0b1011<br />
+    hex(26) → 0x1a<br />
+  </div>
+  <div class="box-img">
+    <img src="images/python.jpg" alt="python"/>
+    </div>
+    </div>
+
+  </div>
+  </body>
+</html>

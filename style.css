@@ -1,0 +1,127 @@
+/* --- Variables de couleur pour un changement facile --- */
+:root {
+    --couleur-primaire: #2c3e50;    /* Bleu-gris sombre pour le texte */
+    --couleur-accent: #3498db;      /* Bleu vif pour les liens */
+    --couleur-accent-hover: #2980b9; /* Bleu plus sombre au survol */
+    --couleur-fond: #f4f7f6;        /* Gris très clair pour le fond */
+    --couleur-carte: #ffffff;      /* Blanc pour le contenu */
+    --ombre: 0 4px 6px rgba(0,0,0,0.1); /* Ombre douce pour le relief */
+}
+
+/* --- Styles de base --- */
+* {
+    box-sizing: border-box; /* Pour une meilleure gestion des marges */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--couleur-fond);
+    color: var(--couleur-primaire);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* --- Conteneur principal (centrage et largeur) --- */
+.container {
+    max-width: 800px;
+    margin: 40px auto; /* Centre horizontalement et ajoute de l'espace en haut/bas */
+    background-color: var(--couleur-carte);
+    padding: 40px;
+    border-radius: 8px; /* Bords arrondis */
+    box-shadow: var(--ombre);
+}
+
+/* --- En-tête --- */
+header {
+    text-align: center;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2.2em;
+    color: #1a252f;
+}
+
+.annee {
+    color: var(--couleur-accent);
+    font-weight: 800;
+}
+
+.sous-titre {
+    font-size: 1.1em;
+    color: #7f8c8d;
+    margin-top: 10px;
+}
+
+/* --- Contenu principal --- */
+main .description {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.05em;
+    color: #4f5f6f;
+}
+
+/* --- Liste des projets (le cœur de la page) --- */
+.liste-projets {
+    list-style-type: none; /* Enlève les puces par défaut */
+}
+
+.liste-projets li {
+    margin-bottom: 15px; /* Espace entre chaque projet */
+}
+
+.liste-projets a {
+    display: block; /* Le lien occupe toute la largeur de la ligne */
+    text-decoration: none; /* Enlève le soulignement par défaut */
+    background-color: #fcfcfc;
+    color: var(--couleur-accent);
+    padding: 18px 25px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: all 0.3s ease; /* Animation douce pour les interactions */
+}
+
+/* Effets au survol et au focus (clavier) */
+.liste-projets a:hover, 
+.liste-projets a:focus {
+    background-color: var(--couleur-accent);
+    color: #ffffff;
+    border-color: var(--couleur-accent);
+    transform: translateY(-2px); /* Léger effet de soulèvement */
+    box-shadow: 0 4px 8px rgba(52, 152, 219, 0.3); /* Ombre bleue */
+    outline: none; /* Enlève le contour par défaut au focus pour le style personnalisé */
+}
+
+/* --- Pied de page --- */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    font-size: 0.9em;
+    color: #95a5a6;
+}
+
+/* --- Adaptabilité (Responsive) --- */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    h1 {
+        font-size: 1.6em;
+    }
+    
+    .liste-projets a {
+        padding: 15px;
+        font-size: 1em;
+    }
+}

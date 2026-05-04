@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>NSI - Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Histoire</a></li>
+            <li><a href="cours.html">Cours</a></li>
+            <li><a href="quiz.html" class="active">Quiz</a></li>
+            <li><a href="equipe.html">Équipe</a></li>
+        </ul>
+        <button id="theme-toggle">Mode Sombre</button>
+    </nav>
+
+    <main>
+        <h1>Vérifiez vos connaissances</h1>
+        <div class="card">
+            <div id="timer" style="font-size: 1.5rem; color: #e74c3c; font-weight: bold; margin-bottom: 10px;" >Temps restant : 60s</div>
+           <form id="quiz-form">
+    <div class="card">
+        <p>1. Quels sont les principaux composants de l'ordinateur ?</p>
+        <input type="radio" name="q1" value="0"> Registre, Cache, Mémoire de masse, Mémoire vive<br>
+        <input type="radio" name="q1" value="1"> UL, UAL, Mémoire, périphérique<br>
+    </div>
+
+    <div class="card">
+        <p>2. Von Neumann a proposé de stocker le programme en mémoire :</p>
+        <input type="radio" name="q2" value="1"> Vrai<br>
+        <input type="radio" name="q2" value="0"> Faux<br>
+    </div>
+
+    <div class="card">
+        <p>3. Linux est un :</p>
+        <input type="radio" name="q3" value="1"> OS<br>
+        <input type="radio" name="q3" value="0"> Processeur<br>
+    </div>
+
+    <div class="card">
+        <p>4. Laquelle est une mémoire permanente :</p>
+        <input type="radio" name="q4" value="0"> RAM<br>
+        <input type="radio" name="q4" value="1"> ROM<br>
+    </div>
+
+    <div class="card">
+        <p>5. Lequel permet d'effacer des répertoires ?</p>
+        <input type="radio" name="q5" value="0"> rm<br>
+        <input type="radio" name="q5" value="1"> rm -r<br>
+    </div>
+
+    <div style="text-align: center; margin-top: 20px;">
+        <button type="button" onclick="validateQuiz()" id="submit-btn">Valider mes réponses</button>
+    </div>
+</form>
+            <h2 id="resultat"></h2>
+        </div>
+    </main>
+    <script src="code.js"></script>
+</body>
+</html>

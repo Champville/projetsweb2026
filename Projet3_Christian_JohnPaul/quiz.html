@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Quiz</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="light">
+
+<nav>
+<a href="index.html">Histoire</a>
+<a href="cours.html">Cours</a>
+<a href="quiz.html" class="active">Quiz</a>
+<a href="equipe.html">Équipe</a>
+<button onclick="changerTheme()">🌙</button>
+</nav>
+
+<h1>Quiz</h1>
+
+<p id="timer">Temps : 30</p>
+
+<form id="quiz">
+
+<p>1. ENIAC est :</p>
+<input type="radio" name="q1" value="a"> Un OS<br>
+<input type="radio" name="q1" value="b"> Un ordinateur<br>
+
+<p>2. RAM est :</p>
+<input type="radio" name="q2" value="a"> Mémoire vive<br>
+<input type="radio" name="q2" value="b"> Disque dur<br>
+
+<p>3. CPU signifie :</p>
+<input type="radio" name="q3" value="a"> Processeur<br>
+<input type="radio" name="q3" value="b"> Écran<br>
+
+<p>4. Un OS sert à :</p>
+<input type="radio" name="q4" value="a"> Jouer uniquement<br>
+<input type="radio" name="q4" value="b"> Gérer le matériel<br>
+
+<p>5. La RAM est :</p>
+<input type="radio" name="q5" value="a"> Temporaire<br>
+<input type="radio" name="q5" value="b"> Permanente<br>
+
+<button type="button" onclick="corriger()">Valider</button>
+
+</form>
+
+<p id="resultat"></p>
+
+<script src="code.js"></script>
+
+</body>
+</html>

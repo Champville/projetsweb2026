@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Binaire — NSI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-brand">
+  <span class="nav-logo">NSI - Binaire</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html">Histoire</a></li>
+    <li><a href="cours.html">Cours</a></li>
+    <li><a href="quiz.html" class="active">Quiz</a></li>
+    <li><a href="equipe.html">Équipe</a></li>
+  </ul>
+  <button class="theme-toggle" id="themeToggle">🌙 Dark</button>
+</nav>
+<header class="hero">
+  <canvas class="hero-canvas" id="heroCanvas"></canvas>
+  <div class="hero-content">
+    <div class="hero-tag">⏱ 2 minutes · 8 questions</div>
+    <h1>Quiz<br><span class="glow">Interactif</span></h1>
+    <p>Teste tes connaissances sur le système binaire. Le chronomètre tourne — bonne chance !</p>
+  </div>
+</header>
+
+<main>
+<div class="quiz-shell">
+  <div id="quizSection">
+
+    <div class="quiz-topbar fade-up">
+      <span class="quiz-label" id="qNum">Question 1 / 8</span>
+      <div class="countdown-box" id="countdown">⏱ 2:00</div>
+    </div>
+
+    <div class="progress-track fade-up delay-1">
+      <div class="progress-fill" id="progressFill" style="width:12.5%"></div>
+    </div>
+
+    <div class="q-card fade-up delay-2">
+      <div class="q-num" id="qNum">Question 1 / 8</div>
+      <div class="q-text" id="qText">Chargement…</div>
+      <div class="options" id="options"></div>
+    </div>
+
+    <div class="quiz-nav fade-up delay-3">
+      <button class="btn btn-outline" id="prevBtn" disabled>← Précédent</button>
+      <button class="btn" id="nextBtn">Suivant →</button>
+      <button class="btn" id="submitBtn" style="display:none">✔ Soumettre</button>
+    </div>
+
+  </div>
+  <div id="scoreSection" style="display:none">
+    <div class="score-card fade-up">
+      <div class="score-emoji" id="scoreEmoji">🎉</div>
+      <div class="score-big" id="scoreNum">0</div>
+      <div class="score-denom" id="scoreDenom">/ 8</div>
+      <p class="score-feedback" id="scoreFeedback"></p>
+      <div class="score-btns">
+        <button class="btn btn-outline" id="reviewBtn">📋 Revoir les réponses</button>
+        <button class="btn" id="restartBtn">🔄 Recommencer</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</main>
+
+<footer>
+  <p>Projet NSI 2025-2026 &mdash; Système Binaire &mdash; Collège Mariste Champville</p>
+</footer>
+
+<script src="code.js"></script>
+</body>
+</html>

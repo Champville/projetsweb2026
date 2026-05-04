@@ -1,0 +1,119 @@
+Fonctions Globales
+saveTimerState(startTime, duration) : Enregistre l'heure de début et la durée du quiz dans le stockage local du navigateur.
+
+loadTimerState() : Récupère les données du minuteur enregistrées pour reprendre là où l'utilisateur s'était arrêté.
+
+clearTimerState() : Supprime les données du minuteur du stockage local.
+
+(Fonction anonyme au début) : Initialise immédiatement le thème (clair ou sombre) dès le chargement de la page.
+
+syncThemeBtn() : Met à jour le texte et l'icône du bouton de changement de thème selon le mode actif.
+
+initBinaryRain() : Initialise et gère l'animation visuelle de "pluie binaire" sur le canvas.
+
+resize() : Ajuste les dimensions du canvas d'animation lorsque la fenêtre est redimensionnée.
+
+draw() : Dessine les caractères "0" et "1" qui tombent pour créer l'effet de pluie.
+
+initConverter() : Configure les écouteurs d'événements pour l'outil de conversion Décimal/Binaire.
+
+initQuiz() : Fonction principale qui gère toute la logique du quiz (questions, score, minuteur).
+
+initPersistentTimer() : Lance ou restaure le compte à rebours en fonction du stockage local.
+
+updateTimerDisplay() : Calcule le temps restant et met à jour l'affichage visuel du chronomètre.
+
+endQuizDueToTime() : Termine automatiquement le quiz lorsque le temps est écoulé.
+
+renderQ() : Affiche la question actuelle et génère les boutons d'options correspondants.
+
+finishQuiz() : Calcule le score final, arrête le temps et affiche les résultats.
+
+Variables Globales et Constantes
+QUESTIONS : Tableau d'objets contenant les énoncés, les options et les bonnes réponses du quiz.
+
+saved : Stocke la préférence de thème (light/dark) récupérée dans le localStorage.
+
+btn : Référence au bouton HTML qui permet de basculer entre le mode clair et sombre.
+
+Variables Locales Clés (dans les fonctions)
+canvas / ctx : Utilisés pour manipuler la zone de dessin et le contexte 2D de l'animation.
+
+drops : Tableau qui stocke la position verticale de chaque colonne de la pluie binaire.
+
+decInput / binInput : Champs de saisie pour les nombres décimaux et binaires du convertisseur.
+
+curr : Index de la question actuellement affichée dans le quiz.
+
+answers : Tableau stockant les réponses sélectionnées par l'utilisateur.
+
+timerInterval : Stocke l'identifiant de l'intervalle pour pouvoir arrêter le chronomètre plus tard.
+
+finished : Booléen indiquant si le quiz est terminé ou toujours en cours.
+
+score : Nombre total de réponses correctes après calcul final.
+
+
+
+
+
+----------------------------------------------------------------------------------------------------
+
+
+
+--bg-primary / --bg-secondary : Définissent les couleurs de fond principales et secondaires de la page.
+
+--bg-card / --bg-code : Couleurs de fond spécifiques pour les cartes de contenu et les blocs de code.
+
+--text-primary / --text-secondary / --text-muted : Hiérarchie des couleurs de texte, du plus important au plus discret.
+
+--accent / --accent-2 : Couleurs vives utilisées pour mettre en avant des éléments clés comme les boutons ou les liens.
+
+--accent-glow / --accent-glow2 : Couleurs transparentes utilisées pour créer des effets de lueur ou de surbrillance.
+
+--nav-bg / --nav-text : Couleurs dédiées spécifiquement à la barre de navigation.
+
+--border / --border-strong : Couleurs pour les bordures fines des cartes et des éléments structurels.
+
+--shadow-sm / --shadow-md / --shadow-lg : Différents niveaux d'ombres portées pour donner de la profondeur.
+
+--correct / --wrong / --warn : Couleurs sémantiques pour indiquer un succès, une erreur ou un avertissement.
+
+--radius / --radius-sm / --radius-xs : Arrondis des angles pour les cartes, boutons et petits éléments.
+
+--transition : Durée et style par défaut des animations de changement d'état (ex: survol).
+
+Sélecteurs de Structure et Composants
+[data-theme="dark"] : Redéfinit les variables de couleurs pour le mode sombre.
+
+.navbar : Définit la barre de navigation fixée en haut de l'écran avec un flou et une ombre.
+
+.hero : Style de la section d'accueil avec un fond sombre et un texte centré.
+
+.hero-canvas : Positionne la zone de dessin (pluie binaire) pour qu'elle couvre tout le fond du Hero.
+
+.timeline : Crée la structure visuelle de l'historique avec une ligne centrale verticale.
+
+.tl-dot : Affiche le point lumineux sur la ligne de temps pour chaque événement.
+
+.card / .tl-card : Définit l'apparence des boîtes de contenu (fond, bordures, ombres).
+
+.cours-grid / .team-grid : Organise l'affichage des cartes en colonnes qui s'adaptent à la largeur de l'écran.
+
+pre / code : Styles pour l'affichage de code informatique avec une police à largeur fixe.
+
+.converter-wrap : Boîte centrée contenant l'outil de conversion numérique.
+
+.btn / .btn-outline : Styles pour les boutons pleins ou avec juste une bordure.
+
+.progress-track / .progress-fill : Barre de progression du quiz montrant l'avancement.
+
+.opt : Style des choix de réponses dans le quiz, changeant de couleur selon la validité.
+
+.score-big : Affiche le score final en très grand à la fin du quiz.
+
+.avatar : Cercle stylisé contenant l'icône ou l'image d'un membre de l'équipe.
+
+.fade-up : Animation qui fait apparaître un élément en le faisant monter légèrement.
+
+@media (max-width: 700px) : Ajuste la mise en page (ex: empiler la timeline) pour les téléphones mobiles.

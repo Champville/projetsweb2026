@@ -1,0 +1,242 @@
+
+table { border-color: #5a1e5f; }
+th {
+    text-align: center;
+    font-size: 30px;
+    color: #d1a6f0;
+    background-color: #3a1f4d;
+}
+.headlines { color: #d1a6f0; }
+td {
+    padding: 10px;
+    font-size: 20px;
+    background-color: #4b2e5e;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(135deg, #121212, #1e1e1e);
+    color: #e0e0e0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #2c2c2c, #4b2e5e);
+    color: #fff;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1.2em;
+    opacity: 0.8;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 30px;
+    background-color: #2a2a2a;
+    border-radius: 12px;
+    border-left: 6px solid #7B5DBE; 
+    box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+    transition: all 0.4s ease;
+}
+
+section:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.7);
+}
+
+section h2 { color: #d1a6f0; }
+
+section p { line-height: 1.7; }
+
+nav {
+    background-color: rgba(30,30,30,0.85);
+    backdrop-filter: blur(8px);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+}
+
+nav a {
+    text-decoration: none;
+    color: #e0e0e0;
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 20px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+nav a.active {
+    background-color: #7B5DBE;
+    color: white;
+}
+
+nav a:hover {
+    background-color: #7B5DBE;
+    color: white;
+    transform: scale(1.05);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 30px;
+}
+
+/* Quiz & Buttons */
+#quizForm { max-width: 900px; margin: 40px auto; }
+
+#submitQuiz {
+    display: block;
+    margin: 40px auto;
+    padding: 15px 35px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg,#7B5DBE,#4b2e5e);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#submitQuiz:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.5);
+}
+
+.question label {
+    display: block;
+    background: #3a2a4c;
+    padding: 12px 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.25s;
+    border: 2px solid transparent;
+}
+
+.question label:hover {
+    background: #4b2e5e;
+    transform: translateX(6px) scale(1.02);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+input[type="radio"] { accent-color: #7B5DBE; }
+
+#resultat {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #d1a6f0;
+    margin-top: 20px;
+}
+
+#searchInput {
+    padding: 10px 15px;
+    border-radius: 30px 0 0 30px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    width: 400px; /* plus large */
+    transition: width 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+#searchInput:focus {
+    width: 500px; /* encore plus large quand cliqué */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+#searchForm button {
+    padding: 10px 18px;
+    border-radius: 0 30px 30px 0;
+    border: none;
+    background-color: #F4A6D7;
+    color: #2E2E2E;
+    cursor: pointer;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+#searchForm button:hover {
+    background-color: #7B5DBE;
+    color: white;
+}
+
+.nav-search-floating {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 20px auto;
+    z-index: 1001;
+}
+
+#searchInput {
+    padding: 12px 20px;
+    border-radius: 50px 0 0 50px;
+    border: none;
+    outline: none;
+    font-size: 1.1em;
+    width: 350px;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: all 0.4s ease;
+}
+
+#searchInput:focus {
+    width: 500px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+#searchForm button {
+    padding: 12px 22px;
+    border-radius: 0 50px 50px 0;
+    border: none;
+    background: linear-gradient(135deg, #7B5DBE, #4b2e5e);
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#searchForm button:hover {
+    background: linear-gradient(135deg, #4b2e5e, #7B5DBE);
+    transform: scale(1.05);
+}
+
+#searchInput::placeholder {
+    color:  #b3a6d1;;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+    #searchInput {
+        width: 250px;
+}

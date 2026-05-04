@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>NSI - Essentiel du Cours</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Histoire</a></li>
+            <li><a href="cours.html" class="active">Cours</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="equipe.html">Équipe</a></li>
+        </ul>
+        <button id="theme-toggle">Mode Sombre</button>
+    </nav>
+
+    <main>
+        <h1>L'Architecture de l'Ordinateur</h1>
+
+        <div class="card">
+            <h3>1. Les composants principaux</h3>
+            <ul>
+                <li><strong>CPU (Processeur) :</strong> Le cerveau → exécute les instructions.</li>
+                <li><strong>UAL :</strong> Fait les calculs (arithmétiques et logiques).</li>
+                <li><strong>Unité de contrôle :</strong> Coordonne les actions.</li>
+                <li><strong>Registres :</strong> Mémoire très rapide dans le CPU.</li>
+                <li><strong>RAM :</strong> Mémoire temporaire (rapide mais volatile).</li>
+                <li><strong>Stockage (SSD / disque dur) :</strong> Mémoire permanente.</li>
+                <li><strong>Périphériques :</strong> Clavier, souris, écran…</li>
+            </ul>
+            <img src="images/différents-composants-dun-pc-legaragedupc.fr_.jpg"
+                 alt="Les composants"
+                 style="display: block; margin: 20px auto; width: 100%; max-width: 450px; height: auto; border-radius: 10px; border: 2px solid #70B2B2; box-shadow: 0 4px 8px rgba(0,0,0,0.1); background: white;">
+        </div>
+
+        <div class="card">
+            <h3>2. Cycle de fonctionnement</h3>
+            <table>
+                <tr>
+                    <th>Étape</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Fetch</td>
+                    <td>Le CPU lit l’instruction en mémoire</td>
+                </tr>
+                <tr>
+                    <td>Decode</td>
+                    <td>Il comprend l’instruction</td>
+                </tr>
+                <tr>
+                    <td>Execute</td>
+                    <td>Il réalise l’action</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <h3>3. Les Bus</h3>
+            <ul>
+                <li><strong>Bus de données :</strong> transporte les informations</li>
+                <li><strong>Bus d’adresses :</strong> indique où lire/écrire</li>
+                <li><strong>Bus de contrôle :</strong> envoie les commandes</li>
+            </ul>
+            <img src="images/Schéma_ordi.png"
+                 alt="Les bus"
+                 style="display: block; margin: 20px auto; width: 100%; max-width: 300px; height: auto; border-radius: 10px; border: 2px solid #70B2B2; box-shadow: 0 4px 8px rgba(0,0,0,0.1); background: white;">
+        </div>
+
+        <div class="card">
+            <h3>4. Architecture de Von Neumann</h3>
+            <ul>
+                <li>Une seule mémoire pour données + programmes</li>
+                <li>Simple et utilisé dans la plupart des ordinateurs</li>
+                <li><strong>Limite :</strong> tout passe par le même bus → ralentissement</li>
+            </ul>
+            <img src="images/von_neum.png"
+                 alt="L'architecture de Von Neumann"
+                 style="display: block; margin: 20px auto; width: 100%; max-width: 250px; height: auto; border-radius: 10px; border: 2px solid #70B2B2; box-shadow: 0 4px 8px rgba(0,0,0,0.1); background: white;">
+        </div>
+
+        <div class="card">
+            <h3>5. Rôle du Système d'Exploitation</h3>
+            <table>
+                <tr>
+                    <th>Fonction</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Gestion des ressources</td>
+                    <td>Partage CPU et RAM entre programmes</td>
+                </tr>
+                <tr>
+                    <td>Gestion des fichiers</td>
+                    <td>Organisation des données</td>
+                </tr>
+                <tr>
+                    <td>Interface</td>
+                    <td>Lien utilisateur / machine</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+    <script src="code.js"></script>
+</body>
+</html>

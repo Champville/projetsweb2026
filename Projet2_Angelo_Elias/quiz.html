@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NSI PROJET-Cours</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="dark">
+    <label class="switch">
+      <input type="checkbox" onclick="toggleMode()" />
+      <span class="slider"></span>
+    </label>
+
+    <div class="gif-background">
+      <h1>Quiz</h1>
+    </div>
+    <p>Vous etes actuellement dans le 'Quiz'</p>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="cours.html">Cours</a>
+      <a href="equipe.html">Equipe</a>
+    </nav>
+    <hr />
+    <div class="quiz-container">
+      <h2 class="quiz-title">Quiz — Représentation des nombres</h2>
+      <div id="timer">⏱ Temps restant : 4:00</div>
+
+      <!-- Question 1 -->
+      <div class="question-block">
+        <div class="question-text">1. Convertir 1101₂ en décimal :</div>
+        <label class="option"
+          ><input type="radio" id="q1a" name="q1" /> 11</label
+        >
+        <label class="option"
+          ><input type="radio" id="q1b" name="q1" /> 13</label
+        >
+        <label class="option"
+          ><input type="radio" id="q1c" name="q1" /> 14</label
+        >
+        <label class="option"
+          ><input type="radio" id="q1d" name="q1" /> 15</label
+        >
+      </div>
+
+      <!-- Question 2 -->
+      <div class="question-block">
+        <div class="question-text">2. Convertir 255₁₀ en hexadécimal :</div>
+        <label class="option"
+          ><input type="radio" id="q2a" name="q2" /> EF</label
+        >
+        <label class="option"
+          ><input type="radio" id="q2b" name="q2" /> FE</label
+        >
+        <label class="option"
+          ><input type="radio" id="q2c" name="q2" /> FF</label
+        >
+        <label class="option"
+          ><input type="radio" id="q2d" name="q2" /> F0</label
+        >
+      </div>
+
+      <!-- Question 3 -->
+      <div class="question-block">
+        <div class="question-text">3. Convertir B4₁₆ en décimal :</div>
+        <label class="option"
+          ><input type="radio" id="q3a" name="q3" /> 164</label
+        >
+        <label class="option"
+          ><input type="radio" id="q3b" name="q3" /> 176</label
+        >
+        <label class="option"
+          ><input type="radio" id="q3c" name="q3" /> 180</label
+        >
+        <label class="option"
+          ><input type="radio" id="q3d" name="q3" /> 184</label
+        >
+      </div>
+
+      <!-- Question 4 -->
+      <div class="question-block">
+        <div class="question-text">
+          4. Combien de bits pour stocker la valeur 200 ?
+        </div>
+        <label class="option"
+          ><input type="radio" id="q4a" name="q4" /> 6 bits</label
+        >
+        <label class="option"
+          ><input type="radio" id="q4b" name="q4" /> 7 bits</label
+        >
+        <label class="option"
+          ><input type="radio" id="q4c" name="q4" /> 8 bits</label
+        >
+        <label class="option"
+          ><input type="radio" id="q4d" name="q4" /> 9 bits</label
+        >
+      </div>
+
+      <!-- Question 5 -->
+      <div class="question-block">
+        <div class="question-text">
+          5. Combien de bits pour stocker la valeur 1000 ?
+        </div>
+        <label class="option"
+          ><input type="radio" id="q5a" name="q5" /> 8 bits</label
+        >
+        <label class="option"
+          ><input type="radio" id="q5b" name="q5" /> 9 bits</label
+        >
+        <label class="option"
+          ><input type="radio" id="q5c" name="q5" /> 10 bits</label
+        >
+        <label class="option"
+          ><input type="radio" id="q5d" name="q5" /> 11 bits</label
+        >
+      </div>
+
+      <!-- Question 6 -->
+      <div class="question-block">
+        <div class="question-text">
+          6. Effectuer l'addition binaire : 1011 + 0110 = ?
+        </div>
+        <label class="option"
+          ><input type="radio" id="q6a" name="q6" /> 10000</label
+        >
+        <label class="option"
+          ><input type="radio" id="q6b" name="q6" /> 10001</label
+        >
+        <label class="option"
+          ><input type="radio" id="q6c" name="q6" /> 10010</label
+        >
+        <label class="option"
+          ><input type="radio" id="q6d" name="q6" /> 11001</label
+        >
+      </div>
+
+      <!-- Question 7 -->
+      <div class="question-block">
+        <div class="question-text">
+          7. Quel est le complément à 2 de 0101 (sur 4 bits) ?
+        </div>
+        <label class="option"
+          ><input type="radio" id="q7a" name="q7" /> 1010</label
+        >
+        <label class="option"
+          ><input type="radio" id="q7b" name="q7" /> 1011</label
+        >
+        <label class="option"
+          ><input type="radio" id="q7c" name="q7" /> 1100</label
+        >
+        <label class="option"
+          ><input type="radio" id="q7d" name="q7" /> 1001</label
+        >
+      </div>
+
+      <!-- Question 8 -->
+      <div class="question-block">
+        <div class="question-text">
+          8. En Python : print(0.1 + 0.7 == 0.8) affiche False. Pourquoi ?
+        </div>
+        <label class="option"
+          ><input type="radio" id="q8a" name="q8" /> Python a un bug de
+          calcul</label
+        >
+        <label class="option"
+          ><input type="radio" id="q8b" name="q8" /> Les flottants ne peuvent
+          pas représenter ces valeurs exactement en binaire</label
+        >
+        <label class="option"
+          ><input type="radio" id="q8c" name="q8" /> 0.1 + 0.7 est égal à
+          0.9</label
+        >
+        <label class="option"
+          ><input type="radio" id="q8d" name="q8" /> Il faut toujours utiliser
+          des entiers</label
+        >
+      </div>
+
+      <!-- Question 9 -->
+      <div class="question-block">
+        <div class="question-text">9. Convertir 42₁₀ en binaire :</div>
+        <label class="option"
+          ><input type="radio" id="q9a" name="q9" /> 101000</label
+        >
+        <label class="option"
+          ><input type="radio" id="q9b" name="q9" /> 101010</label
+        >
+        <label class="option"
+          ><input type="radio" id="q9c" name="q9" /> 100110</label
+        >
+        <label class="option"
+          ><input type="radio" id="q9d" name="q9" /> 110010</label
+        >
+      </div>
+
+      <!-- Question 10 -->
+      <div class="question-block">
+        <div class="question-text">
+          10. 0111 + 0001 = 1000 sur 4 bits signés. C'est un exemple de :
+        </div>
+        <label class="option"
+          ><input type="radio" id="q10a" name="q10" /> Underflow</label
+        >
+        <label class="option"
+          ><input type="radio" id="q10b" name="q10" /> Overflow</label
+        >
+        <label class="option"
+          ><input type="radio" id="q10c" name="q10" /> Complément à 2</label
+        >
+        <label class="option"
+          ><input type="radio" id="q10d" name="q10" /> Résultat normal</label
+        >
+      </div>
+
+      <button class="quiz-btn" id="submit-btn" onclick="valider()">
+        Valider
+      </button>
+      <div id="score"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

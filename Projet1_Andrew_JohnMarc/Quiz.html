@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz sur la Séquence 5</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+<nav class="navbar">
+  <a href="Histoire.html">Histoire</a>
+  <a href="Cour.html">Cours</a>
+  <a href="Quiz.html">Quiz</a>
+  <a href="Participant.html">Équipe</a>
+</nav>
+<div class="body3" id="page3">
+  <div class="h13">
+  <h1>Petit questionnaire de la Séquence 5:</h1>
+  </div>
+    <div class="fnt">
+    <p><b>1) Quel langage est utilisé pour structurer une page web ?</b></p>
+    </div>
+    <input type="radio" name="language" id="CSS"><label for="CSS">CSS</label><br>
+    <input type="radio" name="language" id="HTML"><label for="HTML">HTML</label><br>
+    <input type="radio" name="language" id="JavaScript"><label for="JavaScript">JavaScript</label><br>
+    <input type="radio" name="language" id="PHP"><label for="PHP">PHP</label><br>
+    
+    <div class="fnt">
+    <p><b>2) Parmi les propositions suivantes, lesquelles sont vraies ?</b></p>
+    </div>
+    <input type="checkbox" id="1989"><label for="1989">A. Le Web a été inventé en 1989</label><br>
+    <input type="checkbox" id="Amazon"><label for="Amazon">B. Internet est apparu avec Amazon</label><br> 
+    <input type="checkbox" id="Pages"><label for="Pages">C. Le Web est un ensemble de pages reliées par des liens hypertexte</label><br>
+    <input type="checkbox" id="Internet"><label for="Internet">D. Le Web et Internet sont exactement la même chose</label><br>
+    
+    <div class="fnt">
+    <p><b>3) Qui a inventé le Web ?</b></p>
+    </div>
+    <input type="text" placeholder="Votre réponse ici" id="Lee">
+  
+    <div class="fnt">
+    <p><b>4) Quel type de script est exécuté dans le navigateur ?</b></p>
+    </div>
+    <input type="radio" name="S" id="Serveur"><label for="Serveur">Script côté serveur</label><br>
+    <input type="radio" name="S" id="Client"><label for="Client">Script côté client</label><br>
+    <input type="radio" name="S" id="Réseau"><label for="Réseau">Script réseau</label><br>
+    <input type="radio" name="S" id="ScriptHTML"><label for="ScriptHTML">Script HTML</label><br>
+  
+    <div class="fnt">
+    <p><b>5) Quelle méthode permet d’accéder à un élément HTML par son identifiant ?</b></p>
+    </div>
+    <input type="radio" name="GET" id="E"><label for="E">getElement()</label><br>
+    <input type="radio" name="GET" id="I"><label for="I">getId()</label><br>
+    <input type="radio" name="GET" id="EBI"><label for="EBI">getElementById()</label><br>
+    <input type="radio" name="GET" id="SI"><label for="SI">selectId()</label><br>
+  
+    <div class="fnt">
+    <p><b>6) Parmi les propositions suivantes, lesquelles sont vraies ?</b></p>
+    </div>
+    <input type="checkbox" id="CER"><label for="CER">Le client envoie des requêtes</label><br>
+    <input type="checkbox" id="SER"><label for="SER">Le serveur envoie des réponses</label><br>
+    <input type="checkbox" id="SDSC"><label for="SDSC">Le serveur demande des services au client</label><br>
+    <input type="checkbox" id="CPN"><label for="CPN">Le client peut être un navigateur</label><br>
+  
+    <div class="fnt">
+    <p><b>7) Quel est le premier réseau à l’origine d’Internet ?</b></p>
+    </div>
+    <input type="text" placeholder="Votre réponse ici" id="AT">
+
+    <hr>
+
+    <button onclick="valider_reponses()">Valider</button>
+
+    <p id="resultat"></p>
+
+</div>
+
+</body>
+</html>
+

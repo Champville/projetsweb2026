@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types construits</title> 
+    <meta name="description" content="Site éducatif sur le chapitre 3 du programme NSI première: les Types Construits.">
+    <link id="theme-link" rel="stylesheet" href="style.css">
+  </head>
+  <body style="text-align: left;">
+  <header>
+    <h1>Types construits</h1>
+    <p>Organiser les données dans Python</p>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Histoire</a></li>
+            <li><a href="cours.html">Cours</a></li>
+	    <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="equipe.html">Equipe</a></li>
+        </ul>
+<form id="searchForm" class="nav-search-floating" onsubmit="return false;">
+    <input type="text" id="searchInput"placeholder="Rechercher un mot clé..." />
+    <button type="submit" onclick="search();">🔍</button>
+</form>    
+<button id="modeBtn" onclick="changerMode()">Dark Mode</button>
+</nav> 
+</header>
+<h2 style="text-align: center; color:#9e087e;">Quiz : Testez vos connaissances!</h2>
+<h2 id="timer" style="text-align: right; margin-right:20px;">Temps restant : 5:00</h2>
+
+<form id="quizForm">
+<section>
+<div class="question">
+<p>1) Quelle est la sortie du code? <br>
+mot = "Bonjour" <br>
+print(mot[1:4]) ?</p>
+<label><input type="radio" name="q1"> Bonjou</label>
+<label><input type="radio" name="q1"> B</label>
+<label><input type="radio" id="q1r" name="q1"> onj</label>
+</div>
+</section>
+
+<section>
+<div class="question">
+<p>2) Que va afficher ce code ? <br>
+texte = "Python" <br>
+texte[0] = "J" <br>
+print(texte)</p>
+<label><input type="radio" name="q2"> Jython</label>
+<label><input type="radio" name="q2" id="q2r"> Erreur</label>
+<label><input type="radio" name="q2"> Python</label>
+</div>
+</section>
+
+<section>
+<div class="question">
+<p>3) Quelle sera la valeur affichée? <br>
+s = "informatique" <br>
+print(len(s))</p>
+<label><input type="radio" name="q3" id="q3r"> 12</label>
+<label><input type="radio" name="q3"> 10</label>
+<label><input type="radio" name="q3"> 11</label>
+</div>
+</section>
+
+<section>
+<div class="question">
+<p>4) Que renvoie l’expression:  "nsi" in "cours de nsi" ?</p>
+<label><input type="radio" name="q4"> False</label>
+<label><input type="radio" name="q4"> Erreur : comparaison non permise</label>
+<label><input type="radio" name="q4" id="q4r"> True</label>
+</div>
+</section>
+
+<section>
+<div class="question">
+<p>5) Que va afficher le code?<br>
+texte = "Hello\nWorld" <br>
+print(texte) </p>
+<label><input type="radio" name="q5" id="q5r">Hello <br> World</label>
+<label><input type="radio" name="q5"> Hello World</label>
+<label><input type="radio" name="q5"> Hello\nWorld</label>
+</div>
+</section>
+
+<section>
+<div class="question">
+<p>6) Quelle est la sortie du programme? <br>
+mot = "Python" <br>
+for c in mot: print(c, end="-") ?</p>
+<label><input type="radio" name="q6">P-y-t-h-o-n</label>
+<label><input type="radio" name="q6" id="q6r">P-y-t-h-o-n-</label>
+<label><input type="radio" name="q6"> P y t h o n</label>
+</div>
+</section>
+
+<section>
+<div class="question">
+<p>7) Que retourne la fonction? <br>
+def replace_voyelle(texte)<br>
+return texte.replace("a", "@").replace("e", "3") <br>
+print(replace_voyelle("apprendre")) ?</p>
+<label><input type="radio" name="q7"> @pprendr3</label><br>
+<label><input type="radio" name="q7"> @ppreendre</label><br>
+<label><input type="radio" name="q7" id="q7r">@ppr3ndr3</label>
+</div>
+</section>
+
+<section>
+<div class="question">
+<p>8) Que va afficher le code suivant :<br>
+liste = [1, 2, 3, 4]<br>
+for i in range(len(liste)): liste[i] = liste[i] * 2<br>
+print(liste)</p>
+<label><input type="radio" name="q8">[1, 2, 3, 4]</label><br>
+<label><input type="radio" name="q8">[1, 4, 9, 16]</label><br>
+<label><input type="radio" name="q8" id="q8r">[2, 4, 6, 8]</label>
+</div>
+</section>
+
+<section>
+<div class="question">
+<p>9) Quelle sera la sortie? <br>
+mot =  "python" <br>
+mot = mot.title() <br>
+print(mot) </p>
+<label><input type="radio" name="q9">PYTHON</label><br>
+<label><input type="radio" name="q9">Erreur : .title() ne fonctionne pas sur une seule chaîne</label><br>
+<label><input type="radio" name="q9" id="q9r">Python</label>
+</div>
+</section>
+
+<section>
+<div class="question">
+<p>10) Que va afficher ce code : <br>
+texte = "bonjour" <br>
+ for i in range(0, len(texte), 2) <br>
+print(texte[i], end="") ?</p>
+<label><input type="radio" name="q10" id="q10r">bnojr</label><br>
+<label><input type="radio" name="q10"> bnojur</label><br>
+<label><input type="radio" name="q10"> bjr</label>
+</div>
+</section>
+
+<button type="button" id="submitQuiz" onclick="corrigerQuiz()">Voir mon score</button>
+<p id="resultat"></p>
+
+</form>
+<script src="script.js"></script>
+</body>
+</html>

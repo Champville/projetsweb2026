@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NSI PROJET-Accueil</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="dark">
+    <label class="switch">
+      <input type="checkbox" onclick="toggleMode()" />
+      <span class="slider"></span>
+    </label>
+
+    <div class="gif-background">
+      <h1>Représentation des nombres</h1>
+    </div>
+
+    <p class="subtitle">
+      De la préhistoire aux ordinateurs : comment les humains ont appris à
+      représenter les nombres ?
+    </p>
+    <p>Vous etes actuellement dans la page 'Accueil'</p>
+    <nav>
+      <a href="cours.html">Cours</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="equipe.html">Équipe</a>
+    </nav>
+
+    <hr />
+
+    <h2>Du comptage au calcul numérique :</h2>
+
+    <div class="box">
+      <div class="box-content">
+        <div class="box-text">
+          <h3>Introduction</h3>
+          <p>
+            Depuis toujours, les humains ont besoin de compter : pour échanger,
+            mesurer et organiser. Les systèmes de numération ont beaucoup évolué
+            au fil du temps pour devenir plus efficaces.
+          </p>
+        </div>
+        <div class="box-img">
+          <img
+            src="images/thinker.jpg"
+            alt="introduction"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="box-content">
+        <div class="box-text">
+          <h3>Les premières représentations</h3>
+          <p>
+            Les premières civilisations utilisaient des systèmes simples pour
+            compter, comme des traits ou des symboles. Chaque peuple avait son
+            propre système, souvent difficile à utiliser pour des calculs
+            complexes.
+          </p>
+        </div>
+        <div class="box-img">
+          <img src="images/counting.png" alt="Ancient counting systems" />
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="box-content">
+        <div class="box-text">
+          <h3>Les systèmes antiques</h3>
+          <ul>
+            <li>Les Égyptiens utilisaient un système décimal sans zéro.</li>
+            <li>
+              Les Romains et les Grecs utilisaient un système additif (ex : VIII
+              = 8, XV = 15).
+            </li>
+            <li>Les Sumériens utilisaient la base 60.</li>
+          </ul>
+          <p>
+            Ces systèmes étaient efficaces pour écrire des nombres, mais
+            compliqués pour effectuer des calculs.
+          </p>
+        </div>
+        <div class="box-img">
+          <img
+            src="images/numeration1.jpg"
+            alt="systeme de numeration egyptien et greco-romain"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="box-content">
+        <div class="box-text">
+          <h3>
+            <span class="date-tag">1800 av. J.-C.</span> — La numération de
+            position des Babyloniens
+          </h3>
+          <p>
+            <b>Les Babyloniens introduisent une idée essentielle :</b> la
+            position d'un chiffre change sa valeur. C'est une avancée majeure
+            qui rend les nombres plus puissants et plus flexibles.
+          </p>
+        </div>
+        <div class="box-img">
+          <img
+            src="images/01.png"
+            alt="Numeration Babyloniens"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="box-content">
+        <div class="box-text">
+          <h3>
+            <span class="date-tag">IVe siècle</span> — Le système décimal et le
+            zéro
+          </h3>
+          <p>
+            En Inde, les mathématiciens inventent le système décimal avec le
+            zéro. Ce système permet enfin de faire des calculs facilement —
+            c'est la base du système que nous utilisons aujourd'hui.
+          </p>
+        </div>
+        <div class="box-img">
+          <img
+            src="images/india.jpg"
+            alt="India gave the world zero"  
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="box-content">
+        <div class="box-text">
+          <h3>
+            <span class="date-tag">Fin XVIIe siècle</span> — Le binaire et
+            l'informatique
+          </h3>
+          <p>
+            Leibniz propose un système basé uniquement sur 0 et 1 : le binaire.
+            Aujourd'hui, les ordinateurs utilisent ce système car il correspond
+            à deux états électriques (allumé / éteint).
+          </p>
+        </div>
+        <div class="box-img">
+          <img
+            src="images/intelligent.jpg"
+            alt="binaire "
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="box-content">
+        <div class="box-text">
+          <h3>Le stockage de l'information</h3>
+          <p>
+            En informatique, l'information est mesurée en bits. Un bit ne peut
+            prendre que deux valeurs : 0 ou 1. Les technologies modernes
+            permettent de stocker des milliards de bits dans un espace très
+            réduit.
+          </p>
+        </div>
+        <div class="box-img">
+          <img
+            src="images/google-data-center.jpg"
+            alt="database"
+          />
+        </div>
+      </div>
+    </div>
+
+    <h3>Frise chronologique</h3>
+
+    <div class="frise">
+      <div class="event">
+        <div class="top">
+          <div class="date">1800 av. J.-C.</div>
+          <div class="label">Babyloniens — base 60</div>
+        </div>
+        <div class="dot"></div>
+      </div>
+      <div class="line"></div>
+      <div class="event">
+        <div class="bottom">
+          <div class="date">IVe siècle</div>
+          <div class="label">Inde — invention du zéro</div>
+        </div>
+        <div class="dot"></div>
+      </div>
+      <div class="line"></div>
+      <div class="event">
+        <div class="top">
+          <div class="date">XVIIe siècle</div>
+          <div class="label">Leibniz — système binaire</div>
+        </div>
+        <div class="dot"></div>
+      </div>
+      <div class="line"></div>
+      <div class="event">
+        <div class="bottom">
+          <div class="date">1948</div>
+          <div class="label">Shannon — le bit</div>
+        </div>
+        <div class="dot"></div>
+      </div>
+      <div class="line"></div>
+      <div class="event">
+        <div class="top">
+          <div class="date">Aujourd'hui</div>
+          <div class="label">Milliards de bits !</div>
+        </div>
+        <div class="dot"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

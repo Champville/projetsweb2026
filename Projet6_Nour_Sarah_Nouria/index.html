@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>NSI - Histoire de l'Architecture</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav> 
+        <ul>
+            <li><a href="index.html" class="active">Histoire</a></li>
+            <li><a href="cours.html">Cours</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="equipe.html">Équipe</a></li>
+        </ul>
+        <button id="theme-toggle">Mode Sombre</button>
+    </nav>
+
+    <main>
+        <h1>Histoire de l'Architecture et des OS</h1>
+
+        <div class="card">
+            <h2>Frise Chronologique</h2>
+            <div class="timeline">
+
+                <div class="tl-item">
+                    <div class="tl-year">1943</div>
+                    <div class="tl-body">
+                        <h3>L'ENIAC</h3>
+                        <p>Premier calculateur programmable par câblage, créé par John Mauchly et J. Presper Eckert aux États-Unis.</p>
+                        <ul>
+                            <li><b>Structure :</b> Machine monumentale de 27 tonnes et 170 m².</li>
+                            <li><b>Programmation :</b> S'effectuait manuellement par recâblage physique.</li>
+                            <li><b>Performances :</b> Environ 5 000 additions par seconde.</li>
+							<li><b>Limites :</b> Fragile, absence de mémoirevive moderne</li>
+                        </ul>
+                        <img src="images/eniac.jpg" alt="Photographie de l'ENIAC, le premier ordinateur entièrement électronique" class="img-timeline">
+                    </div>
+                </div>
+
+                <div class="tl-item">
+                    <div class="tl-year">1945</div>
+                    <div class="tl-body">
+                       <h3>Le Modèle de Von Neumann</h3>
+                       <p>John von Neumann révolutionne l'informatique avec le concept de machine universelle.</p>
+                       <ul>
+                           <li><b>Innovation :</b> Les instructions et les données sont stockées dans la même mémoire.</li>
+                           <li><b>Composants :</b> Unité de contrôle, unité arithmétique et logique, mémoire et entrées/sorties.</li>
+                        </ul>
+                        <img src="images/JohnvonNeumann-LosAlamos.jfif" alt="Portrait de John von Neumann, mathématicien et physicien" class="img-timeline">
+                    </div>
+                </div>
+
+                <div class="tl-item">
+                    <div class="tl-year">1948</div>
+                    <div class="tl-body">
+                        <h3>La "Manchester Baby"</h3>
+                        <p>Le premier ordinateur au monde à avoir exécuté un programme stocké en mémoire, validant l'architecture de von Neumann.</p>
+                        <ul>
+                            <li><b>Premier programme :</b> Écrit par Tom Kilburn et exécuté le 21 juin 1948.</li>
+                            <li><b>Héritage :</b> C'est l'ancêtre direct de nos processeurs actuels.</li>
+							<li><b>Performance :</b>Calcul du plus grand facteur premier de 2<sup>18</sup> en 52 minutes</li>
+                        </ul>
+                        <img src="images/manchesterbaby.jpg" alt="Le Manchester Baby, premier ordinateur à programme enregistré" class="img-timeline">
+                    </div>
+                </div>
+
+                <div class="tl-item">
+                    <div class="tl-year">1969</div>
+                    <div class="tl-body">
+                        <h3>Lancement d'Unix</h3>
+                        <p>Système pionnier, source d'inspiration pour la majorité des OS développés par la suite.</p>
+                        <img src="images/logo-unix.jpg" alt="Logo historique du système d'exploitation Unix" class="img-timeline">
+                    </div>
+                </div>
+
+                <div class="tl-item">
+                    <div class="tl-year">1970</div>
+                    <div class="tl-body">
+                        <h3>Explosion des microprocesseurs</h3>
+                        <p>Le bond technologique est immense : on est passé des microprocesseurs de 1970, limités à 2 000 transistors et 0,092 million d'instructions par seconde, à des processeurs modernes capables de gérer 2 000 milliards d'instructions grâce à leurs 38 milliards de transistors.</p>
+                        <ul>
+                            <li><strong>Puissance :</strong> Passage de quelques milliers à plusieurs dizaines de milliards de transistors.</li>
+                        </ul>
+                        <img src="images/transistors.jpg" alt="Évolution des microprocesseurs et densité des transistors" class="img-timeline">
+                    </div>
+                </div>
+
+                <div class="tl-item">
+                    <div class="tl-year">1984</div>
+                    <div class="tl-body">
+                        <h3>Mac OS</h3>
+                        <p>Apple commercialise le premier OS graphique grand public pour les ordinateurs personnels Macintosh.</p>
+                        <img src="images/mac.jpg" alt="L'ordinateur Apple Macintosh" class="img-timeline">
+                    </div>
+                </div>
+
+                <div class="tl-item">
+                    <div class="tl-year">1985</div>
+                    <div class="tl-body">
+                        <h3>Microsoft Windows</h3>
+                        <p>Première version du système d'exploitation Windows, qui est aujourd'hui utilisé par presque 90% des ordinateurs personnels.</p>
+                        <img src="images/horloge-windows-xp-a-windows-11.webp" alt="Évolution des logos de Microsoft Windows à travers les âges" class="img-timeline">
+                    </div>
+                </div>
+
+                <div class="tl-item">
+                    <div class="tl-year">1991</div>
+                    <div class="tl-body">
+                        <h3>Apparition de Linux</h3> 
+                        <p>Première version du système Linux, qui est gratuit open source et utilisé sur divers matériels informatiques.</p>
+                        <img src="images/Logo-Linux.png" alt="Tux, le manchot mascotte officielle du noyau Linux" class="img-timeline">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>L'architecture de Von Neumann</h3>
+            <p>Ce modèle sépare l'unité de calcul de la mémoire. C'est encore la base de nos ordinateurs actuels.</p>
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="images/arch_von_neu.gif" alt="Schéma de l'architecture de Von Neumann : CPU, Mémoire et E/S" 
+                style="width: 100%; max-width: 550px; border-radius: 15px; background: white; padding: 15px; border: 2px solid #70B2B2; box-shadow: 0 10px 25px rgba(0,0,0,0.2);">
+            </div>
+        </div>
+    </main>
+
+    <script src="code.js"></script>
+</body>
+</html>

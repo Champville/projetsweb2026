@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types construits</title> 
+    <meta name="description" content="Site éducatif sur le chapitre 3 du programme NSI première: les Types Construits.">
+    <link id="theme-link" rel="stylesheet" href="style.css">
+  </head>
+  <body style="text-align: left;">
+  <header>
+    <h1>Types construits</h1>
+    <p>Organiser les données dans Python</p>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Histoire</a></li>
+            <li><a href="cours.html">Cours</a></li>
+	    <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="equipe.html">Equipe</a></li>
+        </ul>
+<form id="searchForm" class="nav-search-floating" onsubmit="return false;">
+    <input type="text" id="searchInput" placeholder="Rechercher un mot clé..." />
+    <button type="submit">🔍</button>
+</form>    
+<button id="modeBtn" onclick="changerMode()">Dark Mode</button>
+</nav> 
+</header>
+<main>
+ <h1 class="headlines">1. Les chaînes de caractères (str)</h1> 
+<section>
+    <h2>Définition</h2>
+    <p>
+Une chaîne de caractères est une suite de texte, comme "Bonjour". En Python, les chaînes sont immuables, ce qui signifie qu’on ne peut pas modifier directement un caractère. Si on veut changer une chaîne, on doit en créer une nouvelle.
+    </p>
+  </section>
+  <section>
+    <h2>Manipulation</h2>
+    <p>
+On peut accéder aux caractères grâce aux indices (texte[0]) ou extraire une partie avec un slice (texte[0:5]). On peut aussi parcourir la chaîne avec une boucle for pour traiter chaque caractère.
+  </section>
+  <section>
+    <h2>Méthodes importantes</h2>
+    <p>
+Les fonctions essentielles sont:
+</p>
+<ul>
+<li><b>len():</b> pour afficher le nombre de caractères.</li>
+<li><b>lower():</b> pour changer les majuscules en minuscules.</li>
+<li><b>upper():</b> pour changer les minuscules en majuscules.</li>
+<li><b>replace():</b> pour modifier la copie du str.</li>
+</ul>
+  </section>
+  <section>
+    <h2>Conversion</h2>
+    <p>
+La méthode <b>split()</b> transforme une chaîne en liste, tandis que <b>join() </b> permet de reconstruire une chaîne à partir d’une liste.</p>
+  </section>
+<h1 class="headlines">2. Les listes (list)</h1>
+<section>
+<h2>Définition</h2>
+<p>Une liste est une collection d’éléments, comme [1, 2, 3]. Contrairement aux chaînes, les listes sont <b>muables</b>, donc on peut les modifier après leur création.</p>
+</section>
+<section>
+<h2>Manipulation</h2>
+<p>On accède aux éléments avec des indices et on peut modifier directement une valeur. On peut aussi parcourir la liste avec une boucle for.</p>
+</section>
+<section>
+<h2>Méthodes principales</h2>
+<p>Les méthodes importantes sont:</p>
+<ul>
+<li><b>append():</b> pour ajouter un élément.</li>
+<li><b>insert():</b> pour en placer un à une position précise.</li>
+<li><b>remove():</b> pour supprimer une valeur.</li>
+<li><b>pop():</b> pour retirer un élément.</li>
+<li><b>sort():</b> pour trier la liste.</li>
+<li><b>sorted():</b> pour trier une copie de la liste.</li>
+</ul></section>
+<h1 class="headlines">3. Les tuples (p-uplets)</h1>
+<section>
+<h2>Définition</h2>
+<p>Un tuple est similaire à une liste, mais il est <b>immuable</b>. Il s’écrit avec des parenthèses, comme (1, 2, 3).</p>
+</section>
+<section>
+<h2>Particularité</h2>
+<p>On peut lire les éléments avec des indices, mais on ne peut pas les modifier. Les tuples sont utiles pour stocker des données fixes.</p>
+</section>
+<h1 class="headlines">4. Les dictionnaires (dict)</h1>
+<section>
+<h2>Définition</h2>
+Un dictionnaire stocke des données sous forme de clé : valeur, comme {"nom": "Alice", "age": 20}. Il est <b>muable</b>.
+</section>
+<section>
+<h2>Manipulation</h2>
+<p>On accède aux valeurs grâce à leur clé (d["nom"]). On peut ajouter ou modifier des éléments en utilisant une nouvelle clé ou une clé existante.</p>
+</section>
+<section>
+<h2>Parcours et fonctions</h2>
+<p>On peut parcourir un dictionnaire avec une boucle for, souvent avec items() pour obtenir les clés et les valeurs. La fonction len() donne le nombre d’éléments, et in permet de vérifier si une clé existe.
+</p>
+</section>
+<h1 class="headlines"> 5. Les notions communes</h1>
+<section>
+<h2>Boucle for</h2>
+<p>Toutes les structures (chaînes, listes, tuples, dictionnaires) peuvent être parcourues avec une boucle for, ce qui permet de traiter chaque élément.</p>
+</section>
+<section>
+<h2>Fonctions essentielles</h2>
+<ul><li><b>len():</b> donne le nombre d'éléments (pour une liste ou un tuple) ou le nombre de caractères (pour un str).</li>
+<li><b>in:</b> vérifie la présence d’un élément.</section>
+<section>
+<h2>Muable vs immuable</h2>
+<p>Les listes et dictionnaires sont modifiables (muables), alors que les chaînes et tuples ne le sont pas (immuables).</p>
+</section>
+<section>
+<h2>⚠️ Remarques importantes:</h2>
+<ul>
+<li>Une chaîne ou un tuple <b>ne peut jamais être modifié directement :</b> toute modification crée une nouvelle structure.</li>
+<li>L’opérateur in <b>ne vérifie que les clés dans un dictionnaire</b>, pas les valeurs (sauf si on utilise .values()).
+<li>Après un split(), les éléments obtenus sont toujours <b>des chaînes de caractères</b>, même s’ils ressemblent à des nombres.</li>
+<li>La méthode sort() modifie directement la liste, tandis que sorted() crée une nouvelle liste.</li>
+<li>Une liste peut contenir n’importe quel type d’élément, même d’autres listes ou des tuples.</li>
+<li>Les tuples sont souvent utilisés quand on veut éviter toute modification accidentelle des données.</li>
+<li>Python est très flexible : on peut facilement passer d’un type à un autre (par exemple, chaîne ↔ liste).</li>
+</section>
+<h1 class="headlines">6. Carte mentale récapitulative</h1>
+<section>
+<img src="images/cartementale.png">
+</section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

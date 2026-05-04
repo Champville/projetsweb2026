@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cours de la Séquence 5</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+</head>
+
+<body>
+<nav class="navbar">
+  <a href="Histoire.html">Histoire</a>
+  <a href="Cour.html">Cours</a>
+  <a href="Quiz.html">Quiz</a>
+  <a href="Participant.html">Équipe</a>
+</nav>
+<div class="body2" id="page2">
+  
+  <div class="h12">
+  <h1>Le Cours de la Séquence 5: </h1>
+  </div>
+
+    <h2>1. Modèle client-serveur</h2>
+    <p>Le <b>modèle client-serveur</b> est une architecture de communication entre deux machines le plus souvent distinctes: le <b>client</b> et le <b>serveur</b></p>
+    
+    <ul>
+      <li><b>Client :</b> Client : Le client est la machine lordinateur, smart-phone, etc.) qui demande l'exécution d'un service (comme, par exemple, l'affichage d'une page web). Le client envoie des requêtes au serveur. Les clients web sont souvent des navigateurs web.</li>
+    
+      <li><b>Serveur :</b>Un serveur est une machine robuste et rapide chargée de répondre à la demande (requête) du client en lui fournissant le service demandé.</li>
+    
+      <li><b>Requête :</b>La requête est le message transmis par le client au serveur, décrivant le service à rendre.</li>
+    
+      <li><b>Réponse :</b>La réponse est le message transmis par le serveur au client suite à l'exécution d'un service.</li>
+    </ul>
+    
+    <h2>2.Description d'une page web</h2>
+    
+    <h3>C'est quoi un web?</h3>
+    <p>Le Web est un ensemble de pages reliées par des liens hypertexte.<br>Laffichage d'une page web peut être optimisé (rapi-dité et présentation) selon les particularités du client (ordinateur, smartphone).</p>
+    
+    <h3>Langages informatiques utilisés:</h3>
+    <ul>
+      <li>Le <b>language HTML:</b><br>
+      Le langage HTML permet de structurer le contenu de la page web. Il admet une certaine souplesse syntaxique, mais celle-ci peut entraîner des différences d’affichage selon les navigateurs. Il est donc préférable de respecter les règles pour assurer une présentation uniforme.</li>
+    
+      <li>Le <b>language CSS</b><br>
+      Le language CSS est utilisé pour donner un style et une forme à la page (centré un texte ou un image, mettre en gras, changer la police de caractère...). Une feuille de style externe, nommée par exemple style.css, est souvent insérée dans l'en-tête de la page web.</li>
+    </ul>
+    
+    <h3>Interactivité de la page:</h3>
+    <p>Il est possible de rendre une page web <b>interactive</b>, de telle sorte qu'il y ait de l'intéractivité entre l'utilisateur et la page web.<br> Son contenu pourra alors varier selon l'heure de la requête, le nom de l'utilisateur ou encore le remplissage d'un formulaire par l'utilisateur...</p>
+    
+    <h2>3. Scripts côté serveur et côté client</h2>
+    <p>Le Web fonctionne sur un échange entre clients et serveurs : les serveurs fournissent les contenus, et les clients les récupèrent à distance.
+    Un contenu peut être statique (simplement téléchargé) ou dynamique (généré grâce à des scripts exécutés côté serveur ou côté client).</p>
+    
+    <div class="encadre">
+      <div class="enc">
+        <p><b>Scripts côté serveur:</b><br>
+        Les scripts côté serveur sont exécutés sur le serveur et permettent de traiter des données, comme celles envoyées via un formulaire ou stockées dans une base de données. Le langage le plus utilisé est PHP. Le code reste invisible pour le client, car seule une page HTML générée est envoyée au navigateur, ce qui sollicite fortement le serveur.</p>
+      </div>
+    
+      <div class="enc">
+        <p><b>Scripts côté client:</b><br>
+        Les scripts côté client sont exécutés directement dans le navigateur de l’utilisateur et servent à rendre les pages web interactives et dynamiques. Ils sont souvent écrits en JavaScript et intégrés dans le code HTML ou dans des fichiers externes. Cette exécution permet de réduire la charge du serveur, mais peut être désactivée via des extensions de navigateur comme NoScript.</p>
+      </div>
+    </div>
+    
+    <h2>4. Composants graphiques d'une page web</h2>
+    <p>Pour rendre une page web <b>interactive</b>, il faut y insérer des composants d'<b>interface graphique</b> avec lesquels l'utilisateur peut interagir, en agissant dessus avec le doigt (écran tactile) ou la souris (ordinateur).<br>Ces composants sont compatibles avec les navigateurs les plus utilisés.</p>
+    
+    <h3>Les composants usuels</h3>
+    <p>Il existe un grand nombre de composants graphiques, voici les plus courants:</p>
+    
+    <ul>
+      <li>Zone de texte</li>
+      <li>Bouton poussoir</li>
+      <li>Bouton radio</li>
+      <li>Zone mot de passe</li>
+      <li>Case à cocher</li>
+    </ul>
+    
+    <h3>L'attribut type</h3>
+    <p>L'attribut <b>type</b> indique le texte de composant graphique</p>
+    
+    <h3>L'attribut value</h3>
+    <p>L'attribut value définit la valeur par défaut qui sera affichée dans l'élément au chargement de la page web. Cette valeur est accessible et modifiable, notamment grâce à la méthode getElementById()</p>
+    
+    <h3>L'attribut id</h3>
+    <p>Le côté dynamique de la page web est assuré par la possible modification des valeurs des attributs des composants graphiques. Pour pouvoir accéder indépendamment à chacun des composants, il faut pouvoir les identifier de manière unique : c'est le rôle de l'attribut id. Chaque composant peut posséder un identifiant unique, noté id, composé d'une chaîne de caractère.</p>
+    
+    <h3>La methode getElementById</h3>
+    <p>La méthode getElementById (id) est l'une des fonctions les plus utiles du HTML car elle permet de renvoyer l'objet dont l'identifiant id est donné en paramètre de la fonction. Il est alors possible de modifier par un script les attributs de l'objet : la page devient dynamique.</p>
+    
+    <h2>6. Les gestionnaires d'évènements</h2>
+    <p>Il est possible d'associer des <b>évènements</b> aux composants graphiques présentés précédemment</p>
+    
+    <table border=1>
+      <tr>
+        <th>Évènement</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>onchange</td>
+        <td>Un composant HTML a été changé.</td>
+      </tr>
+      <tr>
+        <td>onclick</td>
+        <td>L'utilisateur a cliqué sur un composant HTML.</td>
+      </tr>
+      <tr>
+        <td>onmouseover</td>
+        <td>L'utilisateur a survolé un composant HTML avec la souris.</td>
+      </tr>
+      <tr>
+        <td>onmouseout</td>
+        <td>L'utilisateur cesse de survoler un composant HTML avec la souris.</td>
+      </tr>
+      <tr>
+        <td>onkeydown</td>
+        <td>L'utilisateur appuie sur une touche clavier.</td>
+      </tr>
+      <tr>
+        <td>onload</td>
+        <td>Le navigateur web a fini de charger la page HTML</td>
+      </tr>
+    </table>
+    
+    <h2>7. Formulaire d'une page web</h2>
+    <p>Un formulaire web envoie ses données vers un serveur via HTTP. GET affiche les données dans l’URL, tandis que POST les envoie de façon invisible et plus sécurisée en apparence.</p>
+    
+    <h2>8. Protocole SSl et sécurité</h2>
+    <p>Le protocole SSL/TLS sécurise les échanges entre client et serveur en assurant l’intégrité des données, l’authentification du serveur et la confidentialité grâce au chiffrement. Une connexion sécurisée se reconnaît par le cadenas dans le navigateur et l’utilisation de « https ». Cependant, cette sécurité ne garantit pas la fiabilité du site, car des sites frauduleux peuvent aussi utiliser HTTPS.</p>
+  <hr>
+   <p><b>Voila un resumé:</b></p>
+  <img src="Images/image2.png">
+</div>
+</body>
+
+
+</html>
